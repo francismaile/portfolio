@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Survey Form</title>
+  <meta name="description" content="Survey form for FreeCodeCamp Responsive Web Design Project">
+  <meta name="author" content="FrancisMaile">
+
+  <link rel="stylesheet" href="style.css">
+<style>
+
+</style>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<h1 id="title">FreeCodeCamp Survey Form</h1>
+		<p id="description">Thank you for helping us by filling in the survey.</p>
+		<form id="survey-form" action="">
+			<div class="formElement">
+				<label class="text-label" id="name-label" for="name">Your Name</label>
+				<input id="name" type="text" name="name" placeholder="Please enter your name" required>
+			</div>
+		
+			<div class="formElement">
+				<label class="text-label" id="email-label" for="email">Your Email</label>
+				<input id="email" type="email" name="email" placeholder="Please enter your email" required>
+			</div>
+		
+			<div class="formElement">
+				<label class="text-label" id="number-label" for="number">How long have you been coding? <div id="optional">(Optional)</div></label>
+				<input id="number" type="number" name="number" min="0" max="73" placeholder="Enter a number of years">
+			</div>
+			
+			<div class="formElement">
+				<label class="certificates-label" id="menu" for="dropdown">Are you currently working on a FreeCodeCamp Certificate?</label>
+				<select id="dropdown" name="certificates">
+					<option id="certificate0" value="None"  selected >Not at this time.</option>
+					<option id="certificate1" value="Responsive Web Design Certification">Responsive Web Design Certification</option>
+					<option id="certificate2" value="JavaScript Algorithms and Data Structures Certification">JavaScript Algorithms and Data Structures Certification</option>
+					<option id="certificate3" value="Front End Development Libraries Certification">Front End Development Libraries Certification</option>
+					<option id="certificate4" value="Data Visualization Certification">Data Visualization Certification</option>
+					<option id="certificate5" value="APIs and Microservices Certification">APIs and Microservices Certification</option>
+					<option id="certificate6" value="Quality Assurance Certification">Quality Assurance Certification</option>
+					<option id="certificate7" value="Scientific Computing with Python Certification">Scientific Computing with Python Certification</option>
+					<option id="certificate8" value="Data Analysis with Python Certification">Data Analysis with Python Certification</option>
+					<option id="certificate9" value="Information Security Certification">Information Security Certification</option>
+					<option id="certificate10" value="Machine Learning with Python Certification">Machine Learning with Python Certification</option>
+					<option id="certificate11" value="Coding Interview Prep ">Coding Interview Prep (Thousands of hours of challenges)</option>
+				</select>
+			</div>
+		
+			<fieldset id="editor-choice">
+				<legend id="editor-legend">Which is your favorite editor?</legend>
+				<p class="radiobtn"><input checked id="editor_Vim" type="radio" name="favorite_editor" value="Vim"><label class="radio-label" for="editor_Vim">Vim</label></p>
+				<p class="radiobtn"><input id="editor_Emacs" type="radio" name="favorite_editor" value="Emacs"><label class="radio-label" for="editor_Emacs">Emacs</label></p>
+				<p class="radiobtn"><input id="editor_VS_Code" type="radio" name="favorite_editor" value="VS Code"><label class="radio-label" for="editor_VS_Code">VS Code</label></p>
+				<p class="radiobtn"><input id="editor_Sublime_Text" type="radio" name="favorite_editor" value="Sublime Text"><label class="radio-label" for="editor_Sublime_Text">Sublime Text</label></p>
+				<p class="radiobtn"><input id="editor_Atom" type="radio" name="favorite_editor" value="Atom"><label class="radio-label" for="editor_Atom">Atom</label></p>
+				<p class="radiobtn"><input id="editor_Notepad++" type="radio" name="favorite_editor" value="Notepad++"><label class="radio-label" for="editor_Notepad++">Notepad++</label></p>
+				<p class="radiobtn"><input id="editor_CoffeeCup" type="radio" name="favorite_editor" value="CoffeeCup – The HTML Editor"><label class="radio-label" for="editor_CoffeeCup">CoffeeCup – The HTML Editor</label></p>
+				<p class="radiobtn"><input id="editor_TextMate" type="radio" name="favorite_editor" value="TextMate"><label class="radio-label" for="editor_TextMate">TextMate</label></p>
+				<p class="radiobtn"><input id="editor_UltraEdit" type="radio" name="favorite_editor" value="UltraEdit"><label class="radio-label" for="editor_UltraEdit">UltraEdit</label></p>
+				<p class="radiobtn"><input id="editor_Coda" type="radio" name="favorite_editor" value="Coda"><label class="radio-label" for="editor_Coda">Coda</label></p>
+				<p class="radiobtn"><input id="editor_BBEdit" type="radio" name="favorite_editor" value="BBEdit"><label class="radio-label" for="editor_BBEdit">BBEdit</label></p>
+				<p class="radiobtn"><input id="editor_Komodo" type="radio" name="favorite_editor" value="Komodo Edit"><label class="radio-label" for="editor_Komodo">Komodo Edit</label></p>
+				<p class="radiobtn"><input id="editor_Brackets" type="radio" name="favorite_editor" value="Brackets"><label class="radio-label" for="editor_Brackets">Brackets</label></p>
+			</fieldset>
+		
+			<fieldset id="checkchoices">
+				<legend id="languages-legend">Which languages do you code with?</legend>
+				<p class="chckbx"><input id="language_JavaScript" type="checkbox" name="languages" value="JavaScript"><label class="checkbox-label" for="language_JavaScript">JavaScript</label></p>
+				<p class="chckbx"><input id="language_Swift" type="checkbox" name="languages" value="Swift"><label class="checkbox-label" for="language_Swift">Swift</label></p>
+				<p class="chckbx"><input id="language_PHP" type="checkbox" name="languages" value="PHP"><label class="checkbox-label" for="language_PHP">PHP</label></p>
+				<p class="chckbx"><input id="language_Scala" type="checkbox" name="languages" value="Scala"><label class="checkbox-label" for="language_Scala">Scala</label></p>
+				<p class="chckbx"><input id="language_Go" type="checkbox" name="languages" value="Go"><label class="checkbox-label" for="language_Go">Go</label></p>
+				<p class="chckbx"><input id="language_Python" type="checkbox" name="languages" value="Python"><label class="checkbox-label" for="language_Python">Python</label></p>
+				<p class="chckbx"><input id="language_Elm" type="checkbox" name="languages" value="Elm"><label class="checkbox-label" for="language_Elm">Elm</label></p>
+				<p class="chckbx"><input id="language_Ruby" type="checkbox" name="languages" value="Ruby"><label class="checkbox-label" for="language_Ruby">Ruby</label></p>
+				<p class="chckbx"><input id="language_C#" type="checkbox" name="languages" value="C#"><label class="checkbox-label" for="language_C#">C#</label></p>
+				<p class="chckbx"><input id="language_Rust" type="checkbox" name="languages" value="Rust"><label class="checkbox-label" for="language_Rust">Rust</label></p>
+				<p class="chckbx"><input id="language_Jva" type="checkbox" name="languages" value="Jva"><label class="checkbox-label" for="language_Jva">Jva</label></p>
+				<p class="chckbx"><input id="language_C" type="checkbox" name="languages" value="C"><label class="checkbox-label" for="language_C">C</label></p>
+				<p class="chckbx"><input id="language_C++" type="checkbox" name="languages" value="C++"><label class="checkbox-label" for="language_C++">C++</label></p>
+				<p class="chckbx"><input id="language_R" type="checkbox" name="languages" value="R"><label class="checkbox-label" for="language_R">R</label></p>
+			</fieldset>
+		
+			<div id="comments">
+				<label class="comment-label">Any comments or suggestions?</label>
+				<textarea id="usercomment" name="userComment" cols="60" rows="8"></textarea>
+			</div>
+			<p id="submit-button">
+				<input type="submit" value="Submit Survey">
+			</p>
+			
+		</form>
+	</div>
+	<a href="https://codepen.io/freeCodeCamp/full/VPaoNP">Project Example</a>
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://localhost:3000/browser-sync/browser-sync-client.js?v=2.26.14'><\/script>".replace("HOST", location.hostname));
+//]]>
+		</script>
+<script>
+	const radios = [...document.getElementsByClassName('radio-label')]
+	radios.forEach( radioBtn => {
+			radioBtn.addEventListener('click', bestEditor, false);
+		});
+		
+	let vimSpot = 0;
+	let prankCount = 0;
+
+	function bestEditor(e) {
+		const editorLegend = document.getElementById('editor-legend');
+			console.log('Click on the circle of the radio button.');
+		switch( prankCount ) {
+			case 2:
+				editorLegend.textContent = "Very well. If you're sure...";
+				return;
+				break;
+			case 1:
+				editorLegend.textContent = "Uumm - Are you sure?";
+				break;
+			case 0:
+				editorLegend.textContent = "Awesome! You are one of us.";
+				break;
+			default:
+		}
+		prankCount += 1;
+
+
+		let newVim = {
+				'index': radios.indexOf(e.target),
+				'label_for': e.target.htmlFor,
+				'label_text': e.target.textContent,
+				'input_id': e.target.previousSibling.id,
+				'input_value': e.target.previousSibling.value
+			}
+		let oldVim = {
+				'index': vimSpot,
+				'label_for': radios[vimSpot].htmlFor,
+				'label_text': radios[vimSpot].textContent,
+				'input_id': radios[vimSpot].previousSibling.id,
+				'input_value': radios[vimSpot].previousSibling.value
+			}
+	
+		// change choice to Vim
+		e.target.previousSibling.id = 'editor_Vim';
+		e.target.previousSibling.value = 'Vim';
+		e.target.htmlFor = 'editor_Vim';
+		e.target.textContent = 'Vim';
+			
+
+		// change old Vim to clicked on choice
+		radios[oldVim.index].previousSibling.id = newVim.input_id;
+		radios[oldVim.index].previousSibling.value = newVim.input_value;
+		radios[oldVim.index].htmlFor = newVim.label_for;
+		radios[oldVim.index].textContent = newVim.label_text;
+
+		vimSpot = newVim.index;
+
+	}
+
+</script>
+
+</body>
+</html>
+

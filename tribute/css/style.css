@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+}
+#wrapper {
+  width: 900px;
+  margin: 20px auto;
+  color: #666;
+  background: #f4f2e7;
+  border: 1px solid #d5d3d1;
+}
+
+img#brad-bunny {
+  width: 640px;
+  height: 360px;
+}
+blockquote {
+  width: 600px;
+  margin: 10px auto;
+  text-align: justify;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+blockquote#mime {
+  width: 300px;
+}
+
+#the-text {
+  width: 800px;
+  margin: 20px auto;
+  text-align: justify;
+}
+#books-list {
+  width: 800px;
+  margin: 10px auto;
+  text-align: left;
+}

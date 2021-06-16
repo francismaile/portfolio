@@ -1,0 +1,105 @@
+/* Stylesheet for FreeCodeCamp Survey Form project */
+
+body {
+	background: #c4dfb8;
+}
+
+
+#wrapper {
+	width: 780px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+form#survey-form {
+	width: 480px;
+	border: 3px ridge gray;
+	margin: 0 auto;
+	padding: 10px 50px;
+	background: #f0f0f0;
+	text-align: left;
+}
+
+label {
+	font: .95em sans-serif;
+}
+
+label.text-label, .certificates-label, .comment-label {
+	width: 480px;
+	display: block;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	padding-left: 12px;
+}
+
+label.checkbox-label, .radio-label {
+	margin: 0;
+	padding-left: 2px;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+	width: 480px;
+	border: none;
+	border-radius: 8px;
+	padding: 8px;
+}
+
+label#number-label {
+	display: flex;
+}
+
+label#number-label div {
+	flex-grow: 100;
+	text-align: right;
+	color: green;
+}
+
+input[type="checkbox"] {
+	min-height: 1.25rem;
+	min-width: 1.25rem;
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+}
+
+select {
+	width: 500px;
+	height: 30px;
+	padding: 8px;
+	border: none;
+	border-radius: 8px;
+}
+
+fieldset {
+	border: 0;
+	margin-top: 12px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+legend {
+	font: .95em sans-serif;
+	line-height: 1.5;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+p.radiobtn {
+	margin: 1px 0;
+}
+
+p.chckbx {
+	margin: 1px 0;
+}
+
+p#submit-button {
+	width: 100%;
+	margin-top: 20px;
+	margin-right: 0px;
+	text-align: right;
+}
+input[type="submit"] {
+	height: 30px;
+	border: 3px grooved gray;
+	border-radius: 6px;
+}
