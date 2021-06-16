@@ -25,5 +25,5 @@ This is where I store projects I'm working on in the process of learning web dev
 <!-- GETTING STARTED -->
 ## Can I use this?
 
-This repo is just here for my personal use. If you think you might anything here useful, go ahead and download it and go to town. It's based on a [list of projects](https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/) for beginner I found on [GeeksforGeeks](https://www.geeksforgeeks.org/).
+This repo is just here for my personal use. If you think you might find anything here useful, go ahead and download it and go to town. It's based on a [list of projects](https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/) for beginner I found on [GeeksforGeeks](https://www.geeksforgeeks.org/).
 
