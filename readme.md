@@ -13,7 +13,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is where is store projects I'm working on in the process of learning web development. I'm also using this as a way to become proficient in using git and github for development.
+This is where I store projects I'm working on in the process of learning web development. I'm also using this as a way to become proficient in using git and github for development.
 
 ### Built With
 
