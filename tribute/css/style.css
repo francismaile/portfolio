@@ -1,11 +1,21 @@
 body {
   text-align: center;
+	background: url("../sitdownshutup.jpg") no-repeat;
+	background-size: cover;
 }
+
+ul.short-list {
+	list-style-type: none;
+	list-style-position: outside;
+	padding-left: 6px;
+	margin-top: -18px;
+}
+
 #wrapper {
   width: 900px;
   margin: 20px auto;
   color: #666;
-  background: #f4f2e7;
+  background: rgba(244, 242, 231, 0.95);
   border: 1px solid #d5d3d1;
 }
 
@@ -13,17 +23,40 @@ img#brad-bunny {
   width: 640px;
   height: 360px;
 }
-blockquote {
-  width: 600px;
-  margin: 10px auto;
-  text-align: justify;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: italic;
+
+.quote-wrapper blockquote {
+	display: inline;
 }
 
-blockquote#mime {
-  width: 300px;
+.quote-wrapper {
+	position: relative;
+	width: 75%;
+	margin: 10px auto;
+	padding: 2px;
+  background: rgba(219, 217, 206, 0.95);
+	border-radius: 6px;
+}
+
+.quote-wrapper:before {
+  position: absolute;
+  content: "“";
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
+}
+
+.quote-wrapper:after {
+  position: absolute;
+  content: "”";
+  font-size: 4em;
+  bottom: 0;
+  right: 0;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
+}
+
+blockquote p {
+  display: inline;
 }
 
 #the-text {
@@ -31,8 +64,14 @@ blockquote#mime {
   margin: 20px auto;
   text-align: justify;
 }
-#books-list {
+
+#book-list {
   width: 800px;
   margin: 10px auto;
   text-align: left;
 }
+
+.nsfw {
+	color: rgb(255, 0, 0, 0.5);
+}
+
