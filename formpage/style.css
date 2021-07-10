@@ -1,21 +1,33 @@
 /* Stylesheet for FreeCodeCamp Survey Form project */
 
 body {
-	background: #c4dfb8;
+	background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='110px' width='38px'><text x='0' y='88' fill='rgba(255, 0, 0, .3)' font-size='80'>?</text></svg>"),
+	url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='110px' width='38px'><text x='4' y='90' fill='rgba(0, 255, 0, .3)' font-size='80'>?</text></svg>"),
+	url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='110px' width='38px'><text x='6' y='92' fill='rgba(0, 0, 255, .3)' font-size='80'>?</text></svg>");
+	background-attachment: scroll, fixed, scroll;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	position: relative;
+	left: 0;
+	background: #FFF;
+	padding-bottom: 20px;
 }
 
 
 #wrapper {
-	width: 780px;
-	margin: 0 auto;
 	text-align: center;
 }
 
 form#survey-form {
+	position: relative;
 	width: 480px;
 	border: 3px ridge gray;
 	margin: 0 auto;
-	padding: 10px 50px;
+	padding: 0px 50px;
 	background: #f0f0f0;
 	text-align: left;
 }
@@ -32,7 +44,7 @@ label.text-label, .certificates-label, .comment-label {
 	padding-left: 12px;
 }
 
-label.checkbox-label, .radio-label {
+label .radio-label {
 	margin: 0;
 	padding-left: 2px;
 }
@@ -44,14 +56,15 @@ input[type="text"], input[type="number"], input[type="email"] {
 	padding: 8px;
 }
 
-label#number-label {
+label.text-label {
 	display: flex;
 }
 
-label#number-label div {
+label div.required {
 	flex-grow: 100;
 	text-align: right;
-	color: green;
+	color: red;
+	font-size: smaller;
 }
 
 input[type="checkbox"] {
@@ -84,12 +97,40 @@ legend {
 	padding-left: 0;
 }
 
+#editor-legend.alert {
+  animation-name: alert;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  color: red;
+}
+
+@keyframes alert {
+	to { color: black; }
+}
+
 p.radiobtn {
 	margin: 1px 0;
 }
 
-p.chckbx {
+ul.chckbx {
+	height: 200px;
+	margin-top: 0px;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+ul.chckbx li {
 	margin: 1px 0;
+	list-style-type: none;
+	flex: 1 1 21%;
+	white-space: nowrap;
+}
+
+ul.chckbx li label {
+	padding 8px 6px;
 }
 
 p#submit-button {
@@ -103,3 +144,70 @@ input[type="submit"] {
 	border: 3px grooved gray;
 	border-radius: 6px;
 }
+
+div[id$='-label'] {
+	text-transform: capitalize;
+}
+
+#results-wrapper {
+	background: #FFF;
+	border: solid 2px;
+	padding: 4px;
+}
+
+#results-inner-wrapper {
+	background: #FFF;
+	border: solid 4px;
+	padding: 18px;
+}
+
+/* Tables
+	adapted from: https://css-tricks.com/accessible-simple-responsive-tables/
+================================== */
+.Dtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.Dtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;  /* Default to full width */
+  padding: 0.2em 0.2em;
+  overflow: hidden; /* Or flex might break */
+}
+
+/* Table column sizing
+================================== */
+
+.Dtable > div:nth-of-type(2n+1)  { 
+	width: 20%; 
+	border: thin solid;
+}
+
+.Dtable > div:nth-of-type(2n) {
+	width: 80%;
+	border: thin solid red;
+}
+
+button#dismiss {
+	width: 100px;
+	padding: 5px;
+	border: thin solid;
+	border-radius: 8px;
+}
+
+
+/*
+ align center vertically and horizontally
+ .parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
