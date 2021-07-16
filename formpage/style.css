@@ -94,6 +94,7 @@ legend {
 	font: .95em sans-serif;
 	line-height: 1.5;
 	margin-left: 0;
+	margin-bottom: 0;
 	padding-left: 0;
 }
 
@@ -105,12 +106,14 @@ legend {
   color: red;
 }
 
-@keyframes alert {
-	to { color: black; }
+#editor-list {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 0;
 }
 
-p.radiobtn {
-	margin: 1px 0;
+@keyframes alert {
+	to { color: black; }
 }
 
 ul.chckbx {
@@ -149,16 +152,16 @@ div[id$='-label'] {
 	text-transform: capitalize;
 }
 
-#results-wrapper {
-	background: #FFF;
-	border: solid 2px;
+#response {
+	width: 50%;
 	padding: 4px;
 }
 
-#results-inner-wrapper {
-	background: #FFF;
+#results-wrapper {
+	margin: 0px;
 	border: solid 4px;
 	padding: 18px;
+	background: #FFF;
 }
 
 /* Tables
@@ -193,11 +196,12 @@ div[id$='-label'] {
 
 button#dismiss {
 	width: 100px;
-	padding: 5px;
-	border: thin solid;
-	border-radius: 8px;
+	margin-left: 80%;
+  border: 6px double black;
+  box-shadow: 0 0 0 1px black;
+  border-radius: 8px;
+	padding: 3px;
 }
-
 
 /*
  align center vertically and horizontally
