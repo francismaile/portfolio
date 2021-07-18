@@ -1,4 +1,8 @@
 /* Stylesheet for FreeCodeCamp Survey Form project */
+@font-face {
+    font-family: Chicago;
+    src: url('../resources/fonts/chicagobold.ttf');
+}
 
 body {
 	background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='110px' width='38px'><text x='0' y='88' fill='rgba(255, 0, 0, .3)' font-size='80'>?</text></svg>"),
@@ -34,6 +38,9 @@ form#survey-form {
 
 label {
 	font: .95em sans-serif;
+	user-select: none;
+	white-space: nowrap;
+	overflow: visible;
 }
 
 label.text-label, .certificates-label, .comment-label {
@@ -155,6 +162,7 @@ div[id$='-label'] {
 #response {
 	width: 50%;
 	padding: 4px;
+	font-family: Chicago;
 }
 
 #results-wrapper {
@@ -162,6 +170,26 @@ div[id$='-label'] {
 	border: solid 4px;
 	padding: 18px;
 	background: #FFF;
+}
+
+#results-wrapper h2#results-header {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+#results-wrapper div#results-disclaimer {
+	width: 50%;
+	margin: 5px auto 20px;
+	text-align: center;
+	font-size: 0.75em;
+}
+
+#results {
+	width: 80%;
+	margin: 10px auto;
+	font-size: 1em;
+	font-weight: bold;
 }
 
 /* Tables
@@ -179,28 +207,45 @@ div[id$='-label'] {
   width: 100%;  /* Default to full width */
   padding: 0.2em 0.2em;
   overflow: hidden; /* Or flex might break */
+	// white-space: wrap;
 }
 
 /* Table column sizing
 ================================== */
 
 .Dtable > div:nth-of-type(2n+1)  { 
-	width: 20%; 
-	border: thin solid;
+	width: 40%;
+	max-width: 40%;
 }
 
 .Dtable > div:nth-of-type(2n) {
-	width: 80%;
-	border: thin solid red;
+	width: 60%;
+}
+
+.Dtable .hide {
+	display: none;
 }
 
 button#dismiss {
 	width: 100px;
+	margin-top: 10px;
 	margin-left: 80%;
+	/*
+	 * Modified this: https://developer.mozilla.org/en-US/docs/Web/CSS/border#examples
+	 * to get the double borders.
+	*/
   border: 6px double black;
   box-shadow: 0 0 0 1px black;
   border-radius: 8px;
 	padding: 3px;
+	background: #F8F8F8;
+}
+
+button#dismiss:hover {
+	background: rgba(0, 0, 255, 0.75);
+	text-weight: bold;
+	color: #FEFEFE;
+	cursor: pointer;
 }
 
 /*

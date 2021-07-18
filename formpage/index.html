@@ -9,6 +9,7 @@
   <meta name="author" content="FrancisMaile">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tooltips.css">
 	<!-- <script src="form-processor.js"></script> -->
 <style>
 
@@ -16,8 +17,6 @@
 </head>
 
 <body>
-
-
 	<div id="wrapper">
 		<header>
 			<h1 id="title">FreeCodeCamp Survey Form</h1>
@@ -26,12 +25,12 @@
 		<form id="survey-form" action="">
 			<div class="formElement">
 				<label class="text-label" id="name-label" for="name">Your Name<div class="required">(Required)</div></label>
-				<input value="me" id="name" type="text" name="name" placeholder="Please enter your name " required>
+				<input id="name" type="text" name="name" placeholder="Please enter your name " required>
 			</div>
 		
 			<div class="formElement">
 				<label class="text-label" id="email-label" for="email">Your Email<div class="required">(Required)</div></label>
-				<input value="me@mail.com" id="email" type="email" name="email" placeholder="Enter your email here " required>
+				<input id="email" type="email" name="email" placeholder="Enter your email here " required>
 			</div>
 		
 			<div class="formElement">
@@ -80,32 +79,100 @@
 			<fieldset id="checkchoices">
 				<legend id="webtech-legend">Which web technologies have you learned to date?</legend>
 				<ul class="chckbx">
-					<li><input id="webtech_HTML5" checked type="checkbox" name="webtech" value="HTML5"><label class="checkbox-label" for="webtech_HTML5">HTML5</label></li>
-					<li><input id="webtech_CSS" checked type="checkbox" name="webtech" value="CSS"><label class="checkbox-label" for="webtech_CSS">CSS</label></li>
-					<li><input id="webtech_Flexbox" checked type="checkbox" name="webtech" value="Flexbox"><label class="checkbox-label" for="webtech_Flexbox">Flexbox</label></li>
-					<li><input id="webtech_Grid" type="checkbox" name="webtech" value="Grid"><label class="checkbox-label" for="webtech_Grid">Grid</label></li>
-					<li><input id="webtech_Bootstrap" type="checkbox" name="webtech" value="Bootstrap"><label class="checkbox-label" for="webtech_Bootstrap">Bootstrap</label></li>
-					<li><input id="webtech_SASS" type="checkbox" name="webtech" value="SASS"><label class="checkbox-label" for="webtech_SASS">SASS</label></li>
-					<li><input id="webtech_JavaScript" type="checkbox" name="webtech" value="JavaScript"><label class="checkbox-label" for="webtech_JavaScript">JavaScript</label></li>
-					<li><input id="webtech_ES6" type="checkbox" name="webtech" value="ES6"><label class="checkbox-label" for="webtech_ES6">ES6</label></li>
-					<li><input id="webtech_OOP" type="checkbox" name="webtech" value="OOP"><label class="checkbox-label" for="webtech_OOP">OOP</label></li>
-					<li><input id="webtech_React" type="checkbox" name="webtech" value="React"><label class="checkbox-label" for="webtech_React">React</label></li>
-					<li><input id="webtech_Redux" type="checkbox" name="webtech" value="Redux"><label class="checkbox-label" for="webtech_Redux">Redux</label></li>
-					<li><input id="webtech_NPM" type="checkbox" name="webtech" value="NPM"><label class="checkbox-label" for="webtech_NPM">NPM</label></li>
-					<li><input id="webtech_Node and Express" type="checkbox" name="webtech" value="Node and Express"><label class="checkbox-label" for="webtech_Node">Node</label></li>
-					<li><input id="webtech_MongoDB" type="checkbox" name="webtech" value="MongoDB and Mongoose"><label class="checkbox-label" for="webtech_MongoDB">MongoDB</label></li>
-					<li><input id="webtech_JSON_APIs" type="checkbox" name="webtech" value="JSON APIs and AJAX"><label class="checkbox-label" for="webtech_JSON_APIs">APIs</label></li>
-					<li><input id="webtech_APIs" type="checkbox" name="webtech" value="APIs and Microservices Projects"><label class="checkbox-label" for="webtech_APIs">APIs</label></li>
-					<li><input id="webtech_Regex" type="checkbox" name="webtech" value="Regex"><label class="checkbox-label" for="webtech_Regex">Regex</label></li>
-					<li><input id="webtech_jQuery" type="checkbox" name="webtech" value="jQuery"><label class="checkbox-label" for="webtech_jQuery">jQuery</label></li>
-					<li><input id="webtech_Data_Visualization" type="checkbox" name="webtech" value="Data Visualization with D3"><label class="checkbox-label" for="webtech_Data_Visualization">Visualization</label></li>
-					<li><input id="webtech_Python" type="checkbox" name="webtech" value="Python"><label class="checkbox-label" for="webtech_Python">Python</label></li>
+					<li>
+						<input id="webtech_HTML5" type="checkbox" name="webtech" value="HTML5">
+						<label class="checkbox-label" for="webtech_HTML5">HTML5</label>
+					</li>
+					<li>
+						<input id="webtech_CSS" type="checkbox" name="webtech" value="CSS">
+						<label class="checkbox-label" for="webtech_CSS">CSS</label>
+					</li>
+					<li>
+						<input id="webtech_Flexbox" type="checkbox" name="webtech" value="Flexbox">
+						<label class="checkbox-label" for="webtech_Flexbox">Flexbox</label>
+					</li>
+					<li>
+						<input id="webtech_Grid" type="checkbox" name="webtech" value="Grid">
+						<label class="checkbox-label" for="webtech_Grid">Grid</label>
+					</li>
+					<li>
+						<input id="webtech_Bootstrap" type="checkbox" name="webtech" value="Bootstrap">
+						<label class="checkbox-label" for="webtech_Bootstrap">Bootstrap</label>
+					</li>
+					<li>
+						<input id="webtech_SASS" type="checkbox" name="webtech" value="SASS">
+						<label class="checkbox-label" for="webtech_SASS">SASS</label>
+					</li>
+					<li>
+						<input id="webtech_JavaScript" type="checkbox" name="webtech" value="JavaScript">
+						<label class="checkbox-label" for="webtech_JavaScript">JavaScript</label>
+					</li>
+					<li>
+						<input id="webtech_ES6" type="checkbox" name="webtech" value="ES6">
+						<label class="checkbox-label" for="webtech_ES6">ES6</label>
+					</li>
+					<li>
+						<input id="webtech_OOP" type="checkbox" name="webtech" value="OOP">
+						<label class="checkbox-label" for="webtech_OOP">OOP</label>
+					</li>
+					<li>
+						<input id="webtech_React" type="checkbox" name="webtech" value="React">
+						<label class="checkbox-label" for="webtech_React">React</label>
+					</li>
+					<li>
+						<input id="webtech_Redux" type="checkbox" name="webtech" value="Redux">
+						<label class="checkbox-label" for="webtech_Redux">Redux</label>
+					</li>
+					<li>
+						<input id="webtech_NPM" type="checkbox" name="webtech" value="NPM">
+						<label class="checkbox-label" for="webtech_NPM">NPM</label>
+					</li>
+					<li>
+						<input id="webtech_Node" type="checkbox" name="webtech" value="Node and Express">
+						<label class="checkbox-label tooltip" data-text="Node and Express" for="webtech_Node">Node≫</label>
+					</li>
+					<li>
+						<input id="webtech_MongoDB" type="checkbox" name="webtech" value="MongoDB and Mongoose">
+						<label class="checkbox-label tooltip" data-text="MongoDB and Mongoose" for="webtech_MongoDB">MongoDB≫</label>
+					</li>
+					<li>
+						<input id="webtech_JSON_APIs" type="checkbox" name="webtech" value="JSON APIs and AJAX">
+						<label class="checkbox-label tooltip" for="webtech_JSON_APIs" data-text="JSON APIs and AJAX">APIs≫</label>
+					</li>
+					<li>
+						<input id="webtech_APIs" type="checkbox" name="webtech" value="APIs and Microservices Projects">
+						<label class="checkbox-label tooltip" for="webtech_APIs" data-text="APIs and Microservices Projects">APIs≫</label>
+					</li>
+					<li>
+						<input id="webtech_Regex" type="checkbox" name="webtech" value="Regex">
+						<label class="checkbox-label" for="webtech_Regex">Regex</label>
+					</li>
+					<li>
+						<input id="webtech_jQuery" type="checkbox" name="webtech" value="jQuery">
+						<label class="checkbox-label" for="webtech_jQuery">jQuery</label>
+					</li>
+					<li>
+						<input id="webtech_Data_Visualization" type="checkbox" name="webtech" value="Data Visualization with D3">
+						<label class="checkbox-label tooltip" data-text="Data Visualization with D3" for="webtech_Data_Visualization">D3≫</label>
+					</li>
+					<li>
+						<input id="webtech_Python" type="checkbox" name="webtech" value="Python">
+						<label class="checkbox-label" for="webtech_Python">Python</label>
+					</li>
+					<li>
+						<input id="webtech_HelmetJS" type="checkbox" name="webtech" value="HelmetJS">
+						<label class="checkbox-label tooltip" data-text="Information Security with HelmetJS" for="webtech_HelmetJS">HelmetJS≫</label>
+					</li>
+					<li>
+						<input id="webtech_TensorFlow" type="checkbox" name="webtech" value="TensorFlow">
+						<label class="checkbox-label tooltip" data-text="Machine Learning with Python and TensorFlow" for="webtech_TensorFlow">TensorFlow≫</label>
+					</li>
 				</ul>
 			</fieldset>
 		
 			<div id="comments">
 				<label class="comment-label">Any comments or suggestions?</label>
-				<textarea id="usercomment" name="userComment" cols="60" rows="8"></textarea>
+				<textarea id="usercomment" name="comment" cols="60" rows="8"></textarea>
 			</div>
 			<p id="submit-button">
 				<input type="submit" value="Submit Survey">
@@ -118,21 +185,9 @@
 	<!-- response dialog -->
 	<dialog id="response">
 	<div id="results-wrapper">
+		<h2 id="results-header">This is what you told us</h2>
+		<div id="results-disclaimer">(This page is just for demonstation purposes. No data was sent to or saved on a server.)</div>
 			<div id="results" class="Dtable">
-				<div id="name-label" class="Dtable-cell">name:</div>
-				<div id="name-value" class="Dtable-cell"></div>
-				<div id="email-label" class="Dtable-cell">email:</div>
-				<div id="email-value" class="Dtable-cell"></div>
-				<div id="number-label" class="Dtable-cell">number:</div>
-				<div id="number-value" class="Dtable-cell"></div>
-				<div id="certificates-label" class="Dtable-cell">certificates:</div>
-				<div id="certificates-value" class="Dtable-cell"></div>
-				<div id="editor-label" class="Dtable-cell">editor:</div>
-				<div id="editor-value" class="Dtable-cell"></div>
-				<div id="webtech-label" class="Dtable-cell">Web Tech:</div>
-				<div id="webtech-value" class="Dtable-cell"></div>
-				<div id="userComment-label" class="Dtable-cell">Your Comment:</div>
-				<div id="userComment-value" class="Dtable-cell"></div>
 			</div>
 			<button id="dismiss" onClick="dialog.close();">OK</button>
 	</div>
@@ -204,32 +259,38 @@
 			}
 		}
 
+		const resultsDiv = document.getElementById('results');
+		resultsDiv.replaceChildren();
+
 		for( property in dataObj ) {
 			if( dataObj[property] !== '' ) {
-				const elem = document.getElementById(property + '-value');
-				if(Array.isArray(dataObj[property])) {
-					elem.textContent = dataObj[property].join(', ');
-				} else {
-					elem.textContent = dataObj[property];
-				}
+				const labelDiv = document.createElement('div');
+				labelDiv.id = 'response-' + property + '-label';
+				labelDiv.classList.add('Dtable-cell');
+				labelDiv.textContent = property;
+				resultsDiv.appendChild(labelDiv);
+
+				const valueDiv = document.createElement('div');
+				valueDiv.id = 'response-' + property + '-label';
+				valueDiv.classList.add('Dtable-cell');
+					if( Array.isArray(dataObj[property]) ) {
+						valueDiv.textContent = dataObj[property].join(', ');
+					} else {
+						valueDiv.textContent = dataObj[property].toString();
+					}
+				
+				resultsDiv.appendChild(valueDiv);
+
 			}
+
 		}
-			dialog.showModal()
-} // getTheData
+
+
+			dialog.showModal();
+	} // getTheData
 	
 	const theForm = document.getElementById('survey-form')
 	theForm.addEventListener('submit', getTheData);
-
-/*
-formData:
-certificates: "None"
-editor: "Vim"
-email: "mymail@email.com"
-languages: (12) ["HTML5", "CSS", "Flexbox", "Grid", "JavaScript", "ES6", "OOP", "React", "NPM", "Node and Express", "JSON APIs and AJAX", "Regex"]
-name: "My Name"
-number: "42"
-userComment: "comment"
-*/
 
 </script>
 
