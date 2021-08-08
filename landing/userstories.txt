@@ -32,7 +32,7 @@ with the class nav-link.
 ✓ #5: When I click a .nav-link button in the nav element, I am taken to the
 corresponding section of the landing page.
 
-#6: I can watch an embedded product video with id="video".
+✓ #6: I can watch an embedded product video with id="video".
 
 ✓ #7: My landing page has a element with a corresponding id="form".
 
@@ -50,7 +50,7 @@ text is an email address.
 ✓ #12: When I click the #submit element, the email is submitted to a static page
 (use this mock URL: https://www.freecodecamp.com/email-submit).
 
-#13: The navbar should always be at the top of the viewport.
+✓ #13: The navbar should always be at the top of the viewport.
 
 #14: My product landing page should have at least one media query.
 
