@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Warmups</title>
+  <meta name="description" content="Warmups">
+  <meta name="author" content="FrancisMaile">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+		<ul>
+			<li><a href="https://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/">Martyr2’s Mega Project List</a></li>
+			<li><a href="https://github.com/vicky002/1000_Projects">1000_Projects</a></li>
+			<li><a href=""></a></li>
+		</ul>
+	<ul>
+		<li>Reverse a string - enter a string in the field and click 'Reverse'.
+			<div>
+				<input id="reverse-string-field" type="text">
+				<button id="reverse-string-button">Reverse</button>
+				<div id="reverse-string-code">
+					<code id="for-loop">
+					<pre>
+// this is the one we use here
+function revFor( str ) {
+  let strRev = '';
+  for( let i = str.length-1; i >= 0 ; i-- ) {
+    strRev += str[i];
+  }
+  return strRev;
+}
+					</pre>
+					</code>
+					<code id="array-fctns">
+					<pre>
+function revFor( str ) {
+  let strRev = '';
+  for( let i = str.length-1; i >= 0 ; i-- ) {
+    strRev += str[i];
+  }
+  return strRev;
+}
+					</pre>
+					</code>
+					<code id="recursion">
+					<pre>
+function revFor( str ) {
+  let strRev = '';
+  for( let i = str.length-1; i >= 0 ; i-- ) {
+    strRev += str[i];
+  }
+  return strRev;
+}
+					</pre>
+					</code>
+				</div>
+			</div>
+		</li>
+		<li>
+			<input type="input">
+			<button>Buzz It</button>
+		</li>
+		
+	</ul>
+
+<script src="script.js"></script>
+<script>
+	/*
+	click on radio btn to choose method
+	the id of the readio btn is the name of the function we are going to call
+	show that code
+	*/
+	const revealCode = document.querySelectorAll('.code-reveal');
+	console.log(revealCode);
+
+	function showCode(e) {
+		const codeToShow = document.getElementById(e.target.id + '-code');
+		if( e.target.textContent.includes('Show') ) {
+			e.target.textContent = 'Hide code';
+			codeToShow.classList.remove('hide');
+			codeToShow.classList.add('show');
+		} else {
+			e.target.textContent = 'Show code';
+			codeToShow.classList.remove('show');
+			codeToShow.classList.add('hide');
+		}
+
+	}
+
+	revealCode.forEach( elem => {
+		elem.addEventListener('click', showCode);
+	});
+
+	const reverseStrFld = document.getElementById('reverse-string-field');
+	const reverseStrBtn = document.getElementById('reverse-string-button');
+	reverseStrBtn.addEventListener('click', () => {
+			const theString = reverseStrFld.value;
+			reverseStrFld.value = window["revFor"](theString);
+		});
+
+</script>
+
+</body>
+</html>
+
+

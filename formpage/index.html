@@ -20,7 +20,8 @@
 	<div id="wrapper">
 		<header>
 			<h1 id="title">FreeCodeCamp Survey Form</h1>
-			<p id="description">Thank you for helping us by filling in the survey.</p>
+			<p id="description">Thank you for helping us by filling in the survey.<br />
+			(This is a concept project only. No data will be sent to or saved on a server.)</p>
 		</header>
 		<form id="survey-form" action="">
 			<div class="formElement">
@@ -35,7 +36,7 @@
 		
 			<div class="formElement">
 				<label class="text-label" id="number-label" for="number">How long have you been coding? </label>
-				<input id="number" type="number" name="number" min="0" max="73" placeholder="Enter a number of years">
+				<input id="number" type="number" name="years" min="1" max="99" placeholder="Enter a number of years <= 99">
 			</div>
 			
 			<div class="formElement">
@@ -248,7 +249,7 @@
 		const formData =  new FormData(e.target);
 		const dataObj = {};
 		for(const [key, value] of formData.entries()) {
-			// console.log(key, value);
+			console.log(key, value);
 			if( dataObj[key] !== undefined ) {
 				if( !Array.isArray(dataObj[key])) {
 						dataObj[key] = [dataObj[key]];
@@ -258,7 +259,7 @@
 				dataObj[key] = value;
 			}
 		}
-
+      console.log({dataObj});
 		const resultsDiv = document.getElementById('results');
 		resultsDiv.replaceChildren();
 
@@ -271,7 +272,7 @@
 				resultsDiv.appendChild(labelDiv);
 
 				const valueDiv = document.createElement('div');
-				valueDiv.id = 'response-' + property + '-label';
+				valueDiv.id = 'response-' + property + '-value';
 				valueDiv.classList.add('Dtable-cell');
 					if( Array.isArray(dataObj[property]) ) {
 						valueDiv.textContent = dataObj[property].join(', ');

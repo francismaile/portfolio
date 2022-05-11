@@ -1,0 +1,131 @@
+	#wrapper {
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#calculator {
+		height: 100vh;
+		width: 100vw;
+		display: grid;
+		grid-template-columns: repeat( 4, 1fr);
+		grid-template-rows: 90px 1fr 50px repeat( 7, 1fr);
+		grid-gap: 3px;
+		border: 1px solid #F3F3F3;
+		padding: 14px;
+		padding-bottom: 18px;
+		border-radius: 10px;
+		background-color: #D3D3D3;
+		background: linear-gradient(120deg, #E3E3E3 , #FFFFFF);
+		box-shadow: 7px 10px 34px 1px rgb(0 0 0 / 68%), inset -1px -6px 12px 0.1px #89847e;
+		cursor: default;
+	}
+
+	#display {
+		grid-column: 1/-1;
+		border: 12px ridge silver;
+		border-radius: 12px;
+		margin-bottom: 2px;
+		padding: 6px 4px 4px 2px;
+		background: #93ad5d;
+		background-image: url(img/lcd-bkgnd.png);
+		width: 100%;
+		overflow: hidden;
+		text-align: right;
+		font-size: 6em;
+		font-family: DSEG Classic Mini Bold, sans-serif;
+	}
+
+	#retro {
+		grid-column: 1/-1;
+		height: 100%;
+		margin-bottom: 6px;
+		text-align: center;
+		font: small-caps 4em sans-serif;
+	}
+
+	#digits-bkgnd, #digits,
+	#error, #error-bkgnd,
+	#memory, #memory-bkgnd {
+		position: absolute;
+		right: 20px;
+		width: 100%;
+	}
+
+	#digits-bkgnd, #digits {
+		top: 50px;
+		font-size: 120px;
+		font-family: DSEG Classic Mini Bold, sans-serif;
+		overflow: hidden;
+		text-align: right;
+	}
+
+	#digits-bkgnd {
+		color: rgba(102, 102, 102, 0.3);
+	}
+
+	#digits, #memory, #error {
+		color: #000;
+		font-weight: bold;
+	}
+
+	#memory-bkgnd, #error-bkgnd {
+		color: rgba(84, 84, 84, 0.7);
+	}
+
+	#error, #error-bkgnd {
+		height: 1.2em;
+		top: 130px;
+		padding-left: 57px;
+		font-family: sans-serif;
+		font-size: 50px;
+		text-align: left;
+		box-sizing: border-box;
+	}
+
+	#memory, #memory-bkgnd {
+		height: 1.2em;
+		top: 40px;
+		padding-left: 55px;
+		font-family: sans-serif;
+		font-size: 50px;
+		text-align: left;
+		box-sizing: border-box;
+	}
+
+	#branding {
+		grid-column: 1/-1;
+		align-self: center;
+		height: 50px;
+		width: 80%;
+		border: 1px solid #FFF;
+		margin: 0 auto;
+		margin-top: 18px;
+		padding: 4px;
+		background: #dee1e8;
+		text-align: center;
+		font: small-caps 2em Verdana;
+	}
+
+	button {
+		margin: 2px 1px;
+		border-radius: 15%;
+		outline: none;
+		cursor: pointer;
+		font-size: 4em;
+		background: rgb(33 15 2 / 70%);
+		color: #FFF;
+		font-family: Futura;
+	}
+
+	button#equals {
+		border-radius: 20px;
+	}
+
+	#sign {
+		padding: 0px;
+		font-size: 4em;
+	}
+

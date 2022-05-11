@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+    <div id="simon-game">
+    <div id="circle-container">
+      <div data-index="0" class="quarter top-left green"></div>
+      <div data-index="1" class="quarter top-right red"></div>
+      <div data-index="2" class="quarter bottom-left yellow"></div>
+      <div data-index="3" class="quarter bottom-right blue"></div>
+      <div class="divider" id="v-divider">&nbsp;</div>
+      <div class="divider" id="h-divider">&nbsp;</div>
+
+      <div id="middle-circle">
+				<h1 id="title">Simon<sup><a class="trademark" href="https://en.wikipedia.org/wiki/Simon_(game)">®</a></sup></h1>
+        <div id="controls">
+          <div id="steps" class="control"></div>
+          <button type="button" id="start" class="control btn-push" title="Start the game!"></button>
+          <div class="control strict-mode">
+            <input type="checkbox" value="1" id="strictModeInput" name=""/>
+            <label for="strictModeInput" title="Play in strict mode."></label>
+          </div>
+        </div>
+        <div id="power">
+          <input type="checkbox" id="switch" /><label for="switch">Off</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

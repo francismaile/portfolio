@@ -44,7 +44,7 @@ label {
 }
 
 label.text-label, .certificates-label, .comment-label {
-	width: 480px;
+	width: 3em;
 	display: block;
 	margin-top: 12px;
 	margin-bottom: 6px;

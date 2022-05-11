@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JS Slider</title>
+  <meta name="description" content="TheHTMLTemplate">
+  <meta name="author" content="FrancisMaile">
+
+	<link rel="stylesheet" href="slider.css">
+</head>
+
+<body>
+	<div id="slider-container">
+		<div id="slider">
+			<div id="slides">
+				images/calculator.png,Electronic Calculator,../calculator/index.html;
+				images/tribute.png,Tribute Page,../tribute/index.html;
+				images/landing.png,Product Landing Page,../landing/index.html;
+				images/wikisearch.png,Wiki api demo page,../wikiapi/index.html;
+				images/pomodoro.png,A Pomodoro Timer,../pomo/index.html;
+			</div>
+				<div id="slider-prev" class="slider-nav"></div>
+				<div id="slider-next" class="slider-nav"></div>
+				<div id="breadcrumbs">
+				</div>
+		</div>
+	</div>
+	<div style="position: relative;">
+		<div id="other-slider" class="slide-in">
+			<ul>
+				<li>Lorem</li>
+				<li>Ipsum</li>
+				<li>Dolor</li>
+			</ul>
+		</div>
+		<button id="toggle" style="position:absolute; top: 120px;">Toggle</button>
+	</div>
+	<script src="slider.js"></script>
+
+	<script>
+	const slideDeck = document.querySelector('#slides')
+	const slideNav = document.querySelector('#breadcrumbs')
+	const slideList = slideDeck.innerText.slice(0, slideDeck.innerText.lastIndexOf(';'));
+	slideDeck.innerText = '';
+	slideList.split(';').forEach( (imgDetails, index)  => {
+		[imgSrc, imgTitle, imgLink] = imgDetails.split(',');
+		// build slide deck
+		const slide = document.createElement('img');
+		slide.src = imgSrc;
+		slide.title = imgTitle.toString();
+		slide.classList.add('slider_slide');
+		if(index === 0) slide.classList.add('active');
+		const link =  imgLink.toString();
+		slide.addEventListener('click', function() {
+			window.location.href = link; // imgLink.toString() );
+		});
+		slideDeck.append(slide);
+				// build nav breadcrumbs
+		const slideNavLink = document.createElement('div');
+		slideNavLink.classList.add('slider_navlink');
+		if(index === 0) slideNavLink.classList.add('active');
+		slideNavLink.addEventListener('click', () => changeSlide(index) );
+		slideNav.append(slideNavLink);
+	});
+		// console.log(slideList.innerText.split(/\s/) );
+
+	</script>
+<!-- <img class="slider_slide active" src="images/calculator.png" /> -->
+
+</body>
+</html>
+
+

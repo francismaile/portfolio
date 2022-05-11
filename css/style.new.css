@@ -1,0 +1,261 @@
+html {
+  height: 100%;
+}
+
+body {
+  /* padding-top: 30px; */
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  height:50vh;
+  background:url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/*
+
+li.logo {
+  max-width:0;
+  overflow: hidden;
+  transition: all 1s;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.navbar-fixed-top li.logo {
+  max-width:500px;
+}
+
+li.logo a {
+  color:black;
+} */
+
+#wrapper {
+  width: 1024px;
+  margin: 20px auto;
+  border: 1px solid #F0F8FF;
+  padding-bottom: 100px;
+  /* background: linear-gradient(to bottom, #7EC0EE, #B0E2FF 50%, #F0F8FF); */
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  border-bottom: 1px solid #fafafa;
+  height: 600px;
+  padding-top: 50px;
+}
+
+#home {
+  background: #BD0CBD no-repeat url("");
+  background-size: 100%;
+}
+
+#home ul.checklist {
+  font-size: 28px;
+  line-height: 2;
+}
+
+ul.checklist {
+  list-style: none;
+}
+
+.checklist li:before {
+  font-size: 18px;
+  content: '➜ ' /*'✔ ';*/
+}
+
+#about {
+  height: 600px;
+  background: #3B5991;
+}
+#about div {
+  margin-top: 40px;
+}
+
+#about p {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+}
+
+#about #knowing-me {
+  margin-top: 10px;
+}
+
+#about #knowing-me p {
+  width: 600px;
+  float: right;
+  margin-right: 30px;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#about #knowing-you ul {
+  list-style: none;
+}
+
+#about #knowing-you li {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 18px;
+}
+
+#about #knowing-you li:before {
+  content: '✓ ' ;
+}
+
+#about #ah-haa p {
+  text-align: center;
+}
+
+#portfolio {
+  height: 600px;
+  background: #EBEB1D;
+}
+
+.portfolio-img {
+  border: 1px solid green;
+  width: 200px;
+  height: 175px;
+}
+
+.row {
+  padding: 20px;
+  margin: 20px auto;
+}
+
+#contact {
+
+}
+
+#contact-form {
+  width: 800px;
+}
+
+#contact div.form-group {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#contact label.col-xs-2 {
+  padding-top: 4px;
+}
+
+#contact div.col-xs-10 {
+  padding-left: 6px;
+}
+
+/*=========================
+  Icons
+  https://bootsnipp.com/snippets/featured/spinning-social-icons ================= */
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	padding: 0;
+}
+
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #00f;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height: 60px;
+   width:100%;
+   background: #E8F8F8;
+}
+
+footer .container {
+  margin: 5px auto;
+  position: relative;
+}
+
+#copy-right {
+  width: 200px;
+  position: absolute;
+  top: 40%;
+  height: 20px;
+}
+.showme {
+  border: 1px solid red;
+}

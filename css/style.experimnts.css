@@ -1,0 +1,33 @@
+#wrapper {
+  margin: 0px auto;
+	padding: 100px;
+  padding-bottom: 100px;
+  /* background: linear-gradient(to bottom, #7EC0EE, #B0E2FF 50%, #F0F8FF); */
+}
+
+section {
+	
+}
+
+
+#project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 20px;
+}
+
+.project {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	grid-gap: 10px;
+	align-items: center;
+	color: white;
+	font-weight: 100;
+}
+
+.project-img {
+	width: 100%;
+}

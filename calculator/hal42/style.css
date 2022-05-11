@@ -1,0 +1,244 @@
+/* This is CSS for the FCC calculator */
+/* Font from http://www.keshikan.net/fonts-e.html */
+@font-face {
+  font-family: 'Segments';
+  src: url('https://raw.githubusercontent.com/jpdrecourt/FCC-Calculator/master/font/DSEG7Classic-Italic.woff');
+}
+
+body {
+  background-color: #674970;
+  color: #dbe9ee;
+  font-family: sans-serif;;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.document {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+  .calculator-wrapper {
+    display: inline-block;
+    padding: 50px;
+  }
+  .text-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width : 475px;
+  }
+}
+
+@media (max-width: 949px) {
+  .calculator-wrapper {
+    padding: 50px auto;
+  }
+  .text-wrapper {
+    padding: 50px auto;
+  }
+
+}
+
+
+.calculator {
+  background-color: #445565;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10%;
+  margin: auto;
+  width: 375px;
+}
+
+.text {
+  margin: auto;
+  padding-top: 50px;
+  width: 375px;
+  font-size: 16px;
+}
+
+.text h1 {
+  margin-top: 0;
+}
+
+.text p,
+.text li {
+  line-height: 1.4em;
+  padding-bottom: 5px;
+}
+
+.text a {
+  color: inherit;
+}
+
+.text code {
+  border-radius: 3px;
+  padding: 0 3px;
+  background-color: rgba(255, 255, 255, 0.11);
+}
+
+.branding {
+  color: #b9c3c9;
+  font-family: sans-serif;
+  height: 95px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight:900;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.model {
+  font-size: 14px;
+  font-weight: 900;
+  margin-top: 3px;
+}
+
+.screen-frame {
+  background-color: #5a6c77;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border: solid 1px #5a6c77;
+  height: 110px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.screen {
+  background-color: #aacfb8;
+  border-radius: 5px;
+  position: relative;
+  height: 75px;
+  width: 250px;
+  margin: 13px auto auto auto;
+  font-size: 32px;
+}
+
+/* Common properties for overlay */
+.screen-background,
+.screen-text {
+  font-family: 'Segments', Fallback, monospace;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.screen-background {
+  color: black;
+  opacity: 0.15;
+}
+
+.screen-text {
+  color: black;
+  visibility: hidden;
+}
+
+/* Common properties for overlay */
+.memory-sign-background,
+.memory-sign {
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 100%;
+  position: absolute;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.memory-sign-background {
+  visibility: visible;
+  opacity: 0.15;
+}
+
+.memory-sign {
+  visibility: hidden;
+}
+
+td,
+tr,
+table {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.top-row {
+  width: 100%;
+}
+
+.other-rows {
+  width: 100%;
+}
+
+.buttons {
+  margin: 20px 30px 15px 30px;
+}
+
+.button {
+  border-radius: 7px;
+  font-family: sans-serif;
+  background-color: #0a2637;
+  color: #cddde3;
+  display: inline-block;
+  height: 35px;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+  width: 55px;
+}
+
+.button.small {
+  font-size: 18px;
+  height: 38px;
+  line-height: 38px;
+  margin-bottom: 16px;
+  width: 50px;
+}
+
+.button.red {
+  background-color: #d42828;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.tooltip {
+  font-size: 8px;
+  line-height: 100%;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  visibility: hidden;
+  z-index: 1;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.button:hover .tooltip {
+    visibility: visible;
+}
+
+.active,
+.button:active,
+.button.small:active {
+  opacity: 0.5;
+}

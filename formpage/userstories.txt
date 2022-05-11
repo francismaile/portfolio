@@ -70,3 +70,11 @@ https:✓cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
 
 Once you're done, submit the URL to your working project with all its tests
 passing.
+
+────────────────────────────────────────────────────────────────────────────────
+Latest additions (21-12-29):
+Response dialog: "Number" label should be something else like "Years"
+clicking on radio button should fire script
+make it responsive
+
+

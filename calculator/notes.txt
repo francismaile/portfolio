@@ -1,0 +1,25 @@
+/*
+	I really like many of the features of this project: https://codepen.io/smnbrgss/pen/ddKLmZ
+*/
+
+@media only screen and (device-width: 768px) {
+	  /* For general iPad layouts */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	  /* For portrait layouts only 
+		standard calculator layout with display at the top of the 
+		screen and button grid below.
+		*/
+}
+
+@media only screen and (min-device-width: 481px) and (ax-device-width: 1024px) and (orientation:landscape) {
+	  /* For landscape layouts only 
+		Printing calculator with:
+		- display in upper left
+		- keys to the right
+		- printer ribbon on the left below display
+		*/
+}
+
+

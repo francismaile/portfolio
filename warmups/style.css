@@ -1,0 +1,19 @@
+#reverse-string-field {
+	width: 300px;
+}
+
+div.hide {
+	display: none;
+}
+
+div.show {
+	display: block;
+}
+
+.code-reveal {
+	cursor: pointer;
+	color: blue;
+	text-decoration: underline;
+	font-size: small;
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div id="project-grid">
+		<a href="" class="project project-tile">
+			<img class="project-img" src="images/calculator.png" alt="project name">
+			<p class="project-title">
+				Project Name
+			</p>
+		</a>
+		<a href="" class="project project-tile">
+			<img class="project-img" src="images/calculator.png" alt="project name">
+			<p class="project-title">
+				Project Name
+			</p>
+		</a>
+		<a href="" class="project project-tile">
+			<img class="project-img" src="images/calculator.png" alt="project name">
+			<p class="project-title">
+				Project Name
+			</p>
+		</a>
+		<a href="" class="project project-tile">
+			<img class="project-img" src="images/calculator.png" alt="project name">
+			<p class="project-title">
+				Project Name
+			</p>
+		</a>
+	</div>
+
+<style>
+    #project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .project {
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      color: white;
+      font-weight: 100;
+    }
+
+    .project-img {
+      width: 100%;
+    }
+  </style>
+	
+</body>
+</html>

@@ -1,0 +1,116 @@
+@media only screen and (max-width: 768px) {
+	  /* For general iPad layouts */
+
+	#calculator {
+		height: 100vh;
+		display: grid;
+		grid-template-columns: repeat( 4, 25% );
+	}
+
+	#display {
+		border: 10px solid green;
+		grid-column: 1/-1;
+		background: #93ad5d;
+		/* background-image: url(https://dl.dropboxusercontent.com/s/nhq4b92sc3f24tf/lcd-bkgnd.png); */
+		background-image: url(img/lcd-bkgnd.png);
+		text-align: end;
+		line-height: 2em;
+		font-size: clamp(100%, 1rem + 8vw, 14vw);
+		font-family: DSEG Classic Mini Bold, sans-serif;
+		color: black;
+	}
+
+	#equals {
+		grid-column: span 2;
+	}
+
+	button {
+		margin: 0px;
+		padding: -10px;
+		background :#BCBCBC;
+		color: black;
+		text-align: center;
+		/* font-size: clamp(100%, 1rem + 8vw, 14vw); */
+		font-size: 6em;
+		/* font-size: inherit; */
+		/* overflow: none; */
+		font-family: Futura;
+		/* font-family: Helvetica; */
+	}
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	  /* For portrait layouts only */
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+	  /* For landscape layouts only */
+}
+
+/*
+ https://stackoverflow.com/questions/23287120/pure-css-code-to-detect-any-version-of-ipad-both-portrait-and-landscape
+ https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation
+ https://blog.appstudio.dev/2015/06/responsive-design-rotating-your-device/
+ https://stackoverflow.com/questions/62717621/white-space-at-page-bottom-after-device-rotation-in-ios-safari
+ https://www.kylejlarson.com/blog/ipad-screen-size-guide-web-design-tips/
+
+ */
+
+@font-face {
+	font-family: "DSEG Classic Mini Bold";
+	/* src: url(https://dl.dropboxusercontent.com/s/ycz95txfg2gzu9j/DSEG7ClassicMini-Bold.ttf) format("truetype"); */
+	src: url(fonts/DSEG7ClassicMini-Bold.ttf) format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vh;
+	/* height: 100vh; */
+}
+
+html {
+	width: 100vh;
+	/* height: 100vh; */
+}
+
+#calculator {
+	height: 40vh;
+	display: grid;
+	grid-template-columns: repeat( 4, 25% );
+}
+
+#display {
+	grid-column: 1/-1;
+  background: #93ad5d;
+  /* background-image: url(https://dl.dropboxusercontent.com/s/nhq4b92sc3f24tf/lcd-bkgnd.png); */
+  background-image: url(img/lcd-bkgnd.png);
+  text-align: end;
+	line-height: 2em;
+	font-size: clamp(100%, 1rem + 8vw, 14vw);
+  font-family: DSEG Classic Mini Bold, sans-serif;
+	color: black;
+}
+
+#equals {
+	grid-column: span 2;
+}
+
+button {
+	margin: 0px;
+	padding: -1000px;
+	background :#BCBCBC;
+	color: black;
+	text-align: center;
+	/* font-size: clamp(100%, 1rem + 8vw, 14vw); */
+	/* font-size: 4em; */
+	/* font-size: inherit; */
+	overflow: none;
+	font-family: Futura;
+	/* font-family: Helvetica; */
+}
+

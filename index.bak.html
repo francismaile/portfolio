@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+  <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+<!-- <script src="javascript/bundle.js"></script> -->
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <!-- TODO improve section colors -->
+  <!-- TODO change nav: active link larger, inactive smaller, plus hilited -->
+  <!-- TODO each section fills screen -->
+  <!-- TODO improve project images -->
+
+  <header>
+    <h1>Francis Maile Web Dev</h1>
+		<p> - code typing animation inserted here - </p>
+		<p>Side by side editing code/live updating as I type the name of the site</p>
+  </header>
+  <nav class=" " id="main">
+      <ul id="navbar">
+        <li class="logo"><a href="#">&lt;&nbsp;Hello&nbsp;World&nbsp;/&gt;</a></li>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+  </nav>
+
+  <div id="wrapper">
+    <section id="welcome-section">
+			<h1>Francis Maile - WebDev</h1>
+      <div class="container">
+       	<ul class="checklist border">
+          <li>You need a web site.</li>
+          <li>I build web sites.</li>
+          <li>A win-win</li>
+        </ul>
+      </div>
+			<div id="knowing-you" class="border">
+      <h2>Knowing Me</h2>
+        <p>I am a creative professional driven to use the best tools and technologies to produce the best possible result for your project.  </p>
+				<p> Need something about the technologies I use.  </p>
+			</div><!-- knowing-me -->
+      <div id="knowing-you" class="border">
+     <h2>Knowing You</h2>
+				<ul>
+					<li>Your project deserves a clean attractive design</li>
+					<li>You deserve a painless process</li>
+					<li>You should get decent value for your investment</li>
+					<li>The project needs to come in on time and on budget</li>
+					<li>It should enhance your business and help you reach <em>your business</em> goals</li>
+					<li>Tell me more...</li>
+        </ul>
+      </div><!-- knowing-you -->
+      <div  id="ah-haa">
+     <h2>ah-haa</h2>
+        <p>
+          There is something <a href="#contact">we can do</a>...
+        </p>
+      </div><!-- ah-haa -->
+    </section>
+    <section id="projects">
+      <h2>Portfolio</h2>
+			<a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+				<img class="project-image" src="" alt="project">
+				<p class="project-title">
+					Tribute Page
+				</p>
+			</a>
+			<div class="project-tile">
+			</div>
+			<div class="project-tile">
+			</div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="container" id="contact-form">
+        <form>
+          <fieldset disabled>
+          <div class="form-group row" id="user-name">
+            <label for="user-name-input" class="col-xs-2 col-form-label">Name</label>
+            <div class="col-xs-10">
+              <input class="form-control" type="text" value="Please introduce yourself" id="user-name-input">
+            </div>
+          </div><!-- user-name -->
+          <div class="form-group row" id="user-email">
+            <label for="user-email-input" class="col-xs-2 col-form-label">Email</label>
+            <div class="col-xs-10">
+              <input class="form-control" type="email" value="nicetoknowya@example.com" id="user-email-input">
+              <small id="emailHelp" class="form-text text-muted">Just between you and me. Promise!.</small>
+            </div><!-- user-email -->
+            <div class="form-group" id="user-message">
+              <label for="user-message-input">Tell me all about it</label>
+              <textarea class="form-control" id="user-message-input" rows="3">This is just an exercise for FreeCodeCamp.com. The form is not currently active.
+              </textarea>
+            </div><!-- user-message -->
+          </div>
+            <button type="submit" class="btn btn-primary" style="float: right;">Send</button>
+            </fieldset>
+        </form>
+        <div style="text-align: center;">
+            <ul class="social-network social-circle">
+              <li><a href="https://github.com/francismaile" target="_blank" class="icoRss" title="Rss"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/francismaile" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/FrancisMaile" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/francis-maile" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+               </ul>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- wrapper -->
+
+<script>
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offsetTop;
+  //const defaultPadding = parseInt(window.getComputedStyle(document.body).paddingTop.replace('px',''));
+
+  function fixNav() {
+    // console.log(topOfNav, window.scrollY);
+    // console.log("padding: ", document.body.style.paddingTop);
+    if (window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+
+  </body>
+
+  </html>

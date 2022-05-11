@@ -1,0 +1,395 @@
+*, *:before, *:after {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    user-select: none;
+    outline: none;
+}
+
+body {
+  font-size: calc(14px + (26 - 14) * ((100vmax - 300px) / (1600 - 300)));
+}
+
+#wrapper {
+	position: relative;
+  background: url(images/tomato.png) no-repeat;
+  background-size: contain;
+  width: 30em;
+  height: 30em;
+  margin: 2em auto 0px;
+}
+
+#timerDisplay {
+  position: absolute;
+	left: 0;
+	right: 0;
+  top: 28%;
+  width: 90%;
+	height: 35%;
+  margin:  auto;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10em;
+}
+
+#timerLabel {
+  position: absolute;
+	left: 0;
+	right: 0;
+  top: 56%;
+  width: 50%;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 3em;
+}
+
+#checkMarks {
+  position: absolute;
+  top: 70%;
+	left: 0;
+	right: 0;
+  max-width: 180px;
+  margin: auto;
+  font-size: 2em;
+	text-align: center;
+}
+
+#timeSetWrapper {
+	border: 1px solid blue;
+  position: absolute;
+	border-radius: 20%;
+	left: 0;
+	right: 0;
+  width: 90%;
+	height: 20%;
+  top: 28%;
+  margin: auto;
+  padding: 60px 0px;
+  background: #F00;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.timerSet {
+	border: 3px solid;
+  outline-style: none;
+  border-radius: 50px 50px;
+  width: 30%;
+  height: 8vh;
+  cursor: pointer;
+  background: white;
+  text-align: center;
+  font: normal 1em/1.25 monospace;
+}
+
+.timerSet div.timeSetLabel {
+  width: 100%;
+	margin-top: 4px;
+  text-align: center;
+  font-size: bold 0.75em;
+}
+
+.timerSet:hover > span::before {
+  content: "- ";
+}
+
+.timerSet:hover > span::after {
+  content: " +";
+}
+
+#settingsBtn {
+  position: absolute;
+	left: 0;
+	right: 0;
+  top: 5%;
+  margin: auto;
+	width: fit-content;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-property: transform;
+	text-align: center;
+	font-size: 2em;
+}
+
+/******************/
+/**  Help System **/
+/******************/
+#help-button {
+  cursor: pointer;
+  position: fixed;
+  top: 3px;
+  left: 3px;
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #FFF url(images/help.png) center no-repeat;
+  /*opacity: 1.0;*/
+}
+
+#help-button.open {
+  background-image: url(images/delete.png);
+  background-size: 75%;
+  background-color: #FFF;
+}
+
+#help {
+  /* display: block; */
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(102, 102, 102, 0.6);
+}
+
+.help-text {
+  font: normal 34px system-ui;
+  color: #FFF;
+}
+
+#help.show {
+  display: block;
+}
+
+#help-help-button {
+  position: absolute;
+  top:12px;
+  left: 70px;
+  color: #000;
+}
+
+.animated {
+   -webkit-animation-duration: 5s; animation-duration: 5s;
+   -webkit-animation-fill-mode: both;animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+.fadeOut {
+   -webkit-animation-name: fadeOut;
+   animation-name: fadeOut;
+}
+
+#help-settings {
+  position: absolute;
+  top: 82px;
+  left: 540px;
+}
+
+#help-start-timer {
+  position: absolute;
+  top: 400px;
+  left: 140px;
+}
+
+#help-stop-timer {
+  position: absolute;
+  top: 450px;
+  left: 24px;
+}
+
+#help-reset-timer {
+  position: absolute;
+  top: 382px;
+  left: 640px;
+}
+
+/* END Help System */
+
+/*****************/
+/**  Show Info  **/
+/*****************/
+#info {
+  border: 3px solid;
+  display: none;
+  top: 50px;
+  height: 680px;
+  width: 45vw;
+  margin: 10px auto;
+  padding: 8px;
+  background: #FFF;
+  /* center absolutely positioned: https://css-tricks.com/forums/topic/horizontal-centering-of-an-absolute-element/ */
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+	font-size: 1em;
+}
+
+#info.show {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#get-info-button {
+  cursor: pointer;
+  position: fixed;
+  top: 3px;
+  /* left: 90%; */
+	right: 0;
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #FFF url(images/info.png) center no-repeat;
+  opacity: 1.0;
+}
+
+#get-info-button.open {
+  background-image: url(images/info-filled.png);
+  background-size: 100%;
+  background-color: #FFF;
+}
+
+#aboutPT {
+  position: relative;
+  border-radius: 12px;
+  height: 550px;
+  margin: 0px auto;
+  background-color: #FFF;
+}
+
+#aboutPT div#content {
+  height: 500px;
+  padding: 2px 18px;
+  overflow: scroll;
+  font-size: 3em;
+}
+
+#aboutPT h2 {
+  position: relative;
+  top: 0px;
+  margin: 2px;
+  text-align: center;
+  font-size: 6em;
+}
+
+#credits {
+}
+
+#credits h2 {
+	margin: 2px 0px 4px;
+}
+
+/* END Get Info */
+
+@media only screen and (max-device-width: 480px) {
+
+}
+
+/* css arrows used with help texts */
+/* based on: https://stackoverflow.com/questions/27492191/how-to-make-a-fancy-arrow-using-css#answer-27492402 */
+
+[class$=-arrow]::before,[class$=-arrow]::after {
+  position: relative;
+  content: "";
+  /* By using an em scale, the arrows will size with the font */
+  width: 0.4em;
+  height: 0.4em;
+
+  transform: rotate(45deg);
+  display: inline-block;
+  border-color: #FFF
+}
+
+.right-arrow::after {
+    border-right: 0.2em solid;
+    border-top: 0.2em solid;
+    margin-right: 0.5em;
+}
+
+.left-arrow::before {
+    border-left: 0.2em solid;
+    border-bottom: 0.2em solid;
+    top: -3pt;
+    margin-right: 0.2em;
+}
+
+.top-arrow::before {
+    position: relative;
+    left: 130px;
+    border-left: 0.2em solid;
+    border-top: 0.2em solid;
+    margin-bottom: 0.75em;
+}
+
+.bottom-arrow::before {
+    left: 130px;
+    top: 0.75em;;
+    border-right: 0.2em solid;
+    border-bottom: 0.2em solid;
+}
+
+@media only screen 
+  and (max-device-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	body {
+		padding: 0;
+		margin: 0;
+	}
+
+	button#menu {
+		/* display: block; */
+	}
+
+	#get-info-button {
+		display: none;
+	}
+
+	#help-button {
+		display: none;
+	}
+
+	#wrapper {
+		position: relative;
+		background: #F00;
+		width: 100%;
+		height: 100vh;
+		margin: 0;
+	}
+
+	#timerDisplay {
+		height: 20%;
+		font-size: 5em;
+	}
+
+	#timerLabel {
+		border: thin solid;
+		width: fit-content;
+	}
+
+	#help-help-button {
+		display: none:
+	}
+
+	.help-text {
+		display: none;
+	}
+
+
+
+}
+
+/*
+✔︎
+HEAVY CHECK MARK
+Unicode: U+2714 U+FE0E, UTF-8: E2 9C 94 EF B8 8E
+&#9745;	&#x2611;
+✓	 	&#10003;	&#x2713;	checkmark sign
+✔	 	&#10004;	&#x2714;	checkmark sign
+*/

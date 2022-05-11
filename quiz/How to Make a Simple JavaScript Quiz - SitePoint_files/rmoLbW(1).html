@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0207)https://codepen.io/SitePoint/embed/rmoLbW?height=575&theme-id=6441&default-tab=result&user=SitePoint&slug-hash=rmoLbW&editable=true&pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&name=cp_embed_1 -->
+<html lang="en" class="mac chrome94 js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>CodePen Embed - Simple JavaScript Quiz  (No Pagination)</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="gr5yDuSt2hGrCNQBRTI97nV0UMBpD1Hsew5sNuDqqmq51y7E8SHU8zWv+BYvUKkUA0lZKijs3ktwqD7cPbg13Q==">
+<link rel="stylesheet" media="all" href="./embed-42b7bfc03bd3f473aa580a69878917e48fc23057d459fb483559b44a952b356d.css">
+<style>
+    .hide {
+      display: none !important;
+    }
+
+    #result-box {
+      background: #3a3a3a;
+      color: #ffffff;
+    }
+    .embed-footer,
+    .embed-nav {
+      background: #3a3a3a;
+      
+    }
+    .embed-nav .code-types a,
+    .embed-nav .result-button-list a,
+    .action-button {
+      color: #ffffff;
+      background-color: #666666;
+    }
+    .embed-nav .code-types a.active,
+    .embed-nav .result-button-list a.active,
+    .action-button.active {
+      background: #3ec9cb;
+      color: #000000;
+      box-shadow: inset 0px 3px #dddddd;
+    }
+    .embed-nav .logo-wrap .edit-on-codepen {
+      color: #ffffff;
+    }
+
+    .embed-nav svg {
+      stroke: #ffffff !important;
+    }
+  </style>
+<link rel="stylesheet" media="all" href="./twilight-a51132346b4bb8d68e88b0537e831f4d31c664d84b268321716a24f137a33cfb.css">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+</head>
+<body id="the-body" style="border: 1px solid #c0c0c0; --borderWidth: 1px;" class="codepen-embed-body results-active">
+<nav class="embed-nav group" id="embed-nav">
+<ul class="code-types">
+<li class="code-type">
+<a id="html-link" href="https://codepen.io/SitePoint/embed/rmoLbW?height=575&amp;theme-id=6441&amp;default-tab=result&amp;user=SitePoint&amp;slug-hash=rmoLbW&amp;editable=true&amp;pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&amp;name=cp_embed_1#html-box" role="button" aria-pressed="false">
+HTML
+</a>
+</li>
+<li class="code-type">
+<a id="css-link" href="https://codepen.io/SitePoint/embed/rmoLbW?height=575&amp;theme-id=6441&amp;default-tab=result&amp;user=SitePoint&amp;slug-hash=rmoLbW&amp;editable=true&amp;pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&amp;name=cp_embed_1#css-box" role="button" aria-pressed="false">
+CSS
+</a>
+</li>
+<li class="code-type">
+<a id="js-link" href="https://codepen.io/SitePoint/embed/rmoLbW?height=575&amp;theme-id=6441&amp;default-tab=result&amp;user=SitePoint&amp;slug-hash=rmoLbW&amp;editable=true&amp;pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&amp;name=cp_embed_1#js-box" role="button" aria-pressed="false">
+JS
+</a>
+</li>
+</ul>
+<ul class="result-button-list">
+<li class="results results-type">
+<a id="result-link" href="https://codepen.io/SitePoint/embed/rmoLbW?height=575&amp;theme-id=6441&amp;default-tab=result&amp;user=SitePoint&amp;slug-hash=rmoLbW&amp;editable=true&amp;pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&amp;name=cp_embed_1#result-box" class="active" aria-pressed="true" role="button">
+Result
+</a>
+</li>
+<li>
+<a href="https://codepen.io/SitePoint/embed/rmoLbW?height=575&amp;theme-id=6441&amp;default-tab=result&amp;user=SitePoint&amp;slug-hash=rmoLbW&amp;editable=true&amp;pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&amp;name=cp_embed_1#resources-link" id="skip-results-iframe-link">Skip Results Iframe</a>
+</li>
+</ul>
+<div class="logo-wrap" id="edit-area">
+<a class="edit-on-codepen" target="_blank" rel="noopener" href="https://codepen.io/SitePoint/pen/rmoLbW" title="Edit on CodePen">
+<div class="large-logo">
+<span id="edit-on-text" class="open-on">EDIT ON</span>
+<svg id="embed-codepen-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138 26" fill="none" stroke="#000" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CodePen">
+<path d="M80 6h-9v14h9m34-14h-9v14h9m-3-7h-6m-28 0h-6m51 7V6l11 14V6M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24m55-10h6c2.2 0 4-1.8 4-4s-1.8-4-4-4h-6v14M15 8c-1.3-1.3-3-2-5-2-4 0-7 3-7 7s3 7 7 7c2 0 3.7-.8 5-2m49-5c0 4-3 7-7 7h-5V6h5c4 0 7 3 7 7z"></path>
+</svg>
+</div>
+<div class="box-logo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 0 26 26" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" role="img" aria-label="Edit on CodePen">
+<path id="icon-codepen-box" d="M22 16.7L33 24l11-7.3V9.3L33 2 22 9.3v7.4zm22 0L33 9.3l-11 7.4m0-7.4l11 7.3 11-7.3M33 2v7.3m0 7.4V24"></path>
+</svg>
+</div>
+</a>
+</div>
+</nav>
+<div id="output" data-border-style="thin" data-header="true">
+<div id="html-box" class="code-wrap code-box box " role="region" aria-label="HTML">
+<div class="editable-badge">
+ Live
+</div>
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 10px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>3</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+</div>
+<div id="css-box" class="code-wrap code-box box " role="region" aria-label="CSS">
+<div class="editable-badge">
+Live
+</div>
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 10px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>28</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+</div>
+<div id="js-box" class="code-wrap code-box box " role="region" aria-label="JS">
+<div class="editable-badge">
+Live
+</div>
+<div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-simplescroll"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 0px;"><div style="height: 10px; top: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; padding-right: 9px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>112</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div>
+</div>
+<div id="result-box" class="code-box active zoom-1" role="region" aria-label="Result">
+<iframe allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowfullscreen="true" allowpaymentrequest="true" allowtransparency="true" class="result-iframe  " frameborder="0" id="result-iframe" loading="lazy" name="CodePen Preview for Simple JavaScript Quiz  (No Pagination)" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="yes" title="CodePen Preview for Simple JavaScript Quiz  (No Pagination)" data-src="https://cdpn.io/SitePoint/fullembedgrid/rmoLbW?animations=run&amp;type=embed" src="./rmoLbW.html">
+  </iframe>
+</div>
+<div id="about-box">
+<div class="about-container">
+<div class="about-user">
+<a href="https://codepen.io/SitePoint" target="_blank" rel="noopener"><img src="./default.png" loading="lazy" alt="" class="about-image"></a>
+<div class="about-user-info">
+<p>
+This Pen is owned by <a href="https://codepen.io/SitePoint" target="_blank" rel="noopener">SitePoint</a> on <a href="https://codepen.io/" target="_blank" rel="noopener">CodePen</a>.
+It is a fork of <a href="https://cdpn.io/yaphi1/fullpage/vmggZX?default-tab=result&amp;editable=true&amp;height=575&amp;name=cp_embed_1&amp;pen-title=Simple%20JavaScript%20Quiz%20%20(No%20Pagination)&amp;slug-hash=rmoLbW&amp;theme-id=6441&amp;user=SitePoint">this Pen.</a>
+</p>
+<p>
+<a href="https://codepen.io/SitePoint" target="_blank" rel="noopener" class="about-user-more">
+See more by @SitePoint on CodePen
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="resources-box" class="resources-box">
+<h3>External CSS</h3>
+<p>
+This Pen doesn't use any external CSS resources.
+</p>
+<h3>External JavaScript</h3>
+<p>
+This Pen doesn't use any external JavaScript resources.
+</p>
+</div>
+</div>
+<footer class="embed-footer" id="embed-footer">
+<button id="resources-link" class="resources-link action-button bottom left" href="#resources-box" aria-pressed="false" role="button">
+Resources
+</button>
+<ul class="scaling-choices bottom right">
+<li><button class="action-button" id="zoom-button-1">1×</button></li>
+<li><button class="action-button" id="zoom-button-05">0.5×</button></li>
+<li><button class="action-button" id="zoom-button-025">0.25×</button></li>
+</ul>
+<button id="rerun-button" class="action-button rerun-button bottom right">
+Rerun
+</button>
+</footer>
+<textarea id="init-data" style="display:none">{"__browser":{"device":"unknown_device","mobile":false,"name":"chrome","platform":"mac","version":"94"},"__constants":{"gridIframeSandboxAttributes":"allow-forms allow-modals allow-pointer-lock allow-presentation allow-same-origin allow-scripts"},"__CPDATA":{"domain_iframe":"https://cdpn.io","environment":"production","host":"codepen.io","iframe_allow":"accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write","iframe_sandbox":"allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation"},"__graphql":{"data":null,"errors":[{"message":"Cannot return null for non-nullable field Query.sessionUser"}]},"__pay_stripe_public":"pk_NgCjQmQs7wXOFmfNC0LKMgEkmlThn","__pay_braintree_env":"production","__boomboom":{"serve_url":"https://cdpn.io/cp/internal/boomboom","store_url":"https://codepen.io/cp/internal/boomboom/store"},"__pageType":"embed","__item":"{\"editor_settings\":{\"auto_run\":true,\"autocomplete\":false,\"code_folding\":true,\"css_pre_processor\":\"none\",\"css_prefix\":\"neither\",\"css_starter\":\"neither\",\"emmet_active\":true,\"font_size\":\"14\",\"font_type\":\"monaco\",\"format_on_save\":false,\"html_pre_processor\":\"none\",\"indent_with\":\"spaces\",\"js_pre_processor\":\"none\",\"key_bindings\":\"normal\",\"line_numbers\":true,\"line_wrapping\":true,\"match_brackets\":true,\"snippets\":{\"markupSnippets\":{},\"stylesheetSnippets\":{}},\"tab_size\":\"2\",\"theme\":\"twilight\",\"id\":\"rmoLbW\",\"auto_save\":true},\"hashid\":\"rmoLbW\",\"itemType\":\"pen\",\"resources\":[],\"tags\":[\"quiz\"],\"id\":15174003,\"user_id\":123941,\"html\":\"&lt;div id=\\\"quiz\\\"&gt;&lt;/div&gt;\\n&lt;button id=\\\"submit\\\"&gt;Submit Quiz&lt;/button&gt;\\n&lt;div id=\\\"results\\\"&gt;&lt;/div&gt;\",\"css\":\"body{\\n\\tfont-size: 20px;\\n\\tfont-family: sans-serif;\\n\\tcolor: #333;\\n}\\n.question{\\n\\tfont-weight: 600;\\n}\\n.answers {\\n  margin-bottom: 20px;\\n}\\n.answers label{\\n  display: block;\\n}\\n#submit{\\n\\tfont-family: sans-serif;\\n\\tfont-size: 20px;\\n\\tbackground-color: #279;\\n\\tcolor: #fff;\\n\\tborder: 0px;\\n\\tborder-radius: 3px;\\n\\tpadding: 20px;\\n\\tcursor: pointer;\\n\\tmargin-bottom: 20px;\\n}\\n#submit:hover{\\n\\tbackground-color: #38a;\\n}\",\"parent\":14601749,\"js\":\"(function(){\\n  function buildQuiz(){\\n    // variable to store the HTML output\\n    const output = [];\\n\\n    // for each question...\\n    myQuestions.forEach(\\n      (currentQuestion, questionNumber) =&gt; {\\n\\n        // variable to store the list of possible answers\\n        const answers = [];\\n\\n        // and for each available answer...\\n        for(letter in currentQuestion.answers){\\n\\n          // ...add an HTML radio button\\n          answers.push(\\n            `&lt;label&gt;\\n              &lt;input type=\\\"radio\\\" name=\\\"question${questionNumber}\\\" value=\\\"${letter}\\\"&gt;\\n              ${letter} :\\n              ${currentQuestion.answers[letter]}\\n            &lt;/label&gt;`\\n          );\\n        }\\n\\n        // add this question and its answers to the output\\n        output.push(\\n          `&lt;div class=\\\"question\\\"&gt; ${currentQuestion.question} &lt;/div&gt;\\n          &lt;div class=\\\"answers\\\"&gt; ${answers.join('')} &lt;/div&gt;`\\n        );\\n      }\\n    );\\n\\n    // finally combine our output list into one string of HTML and put it on the page\\n    quizContainer.innerHTML = output.join('');\\n  }\\n\\n  function showResults(){\\n\\n    // gather answer containers from our quiz\\n    const answerContainers = quizContainer.querySelectorAll('.answers');\\n\\n    // keep track of user's answers\\n    let numCorrect = 0;\\n\\n    // for each question...\\n    myQuestions.forEach( (currentQuestion, questionNumber) =&gt; {\\n\\n      // find selected answer\\n      const answerContainer = answerContainers[questionNumber];\\n      const selector = `input[name=question${questionNumber}]:checked`;\\n      const userAnswer = (answerContainer.querySelector(selector) || {}).value;\\n\\n      // if answer is correct\\n      if(userAnswer === currentQuestion.correctAnswer){\\n        // add to the number of correct answers\\n        numCorrect++;\\n\\n        // color the answers green\\n        answerContainers[questionNumber].style.color = 'lightgreen';\\n      }\\n      // if answer is wrong or blank\\n      else{\\n        // color the answers red\\n        answerContainers[questionNumber].style.color = 'red';\\n      }\\n    });\\n\\n    // show number of correct answers out of total\\n    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;\\n  }\\n\\n  const quizContainer = document.getElementById('quiz');\\n  const resultsContainer = document.getElementById('results');\\n  const submitButton = document.getElementById('submit');\\n  const myQuestions = [\\n    {\\n      question: \\\"Who invented JavaScript?\\\",\\n      answers: {\\n        a: \\\"Douglas Crockford\\\",\\n        b: \\\"Sheryl Sandberg\\\",\\n        c: \\\"Brendan Eich\\\"\\n      },\\n      correctAnswer: \\\"c\\\"\\n    },\\n    {\\n      question: \\\"Which one of these is a JavaScript package manager?\\\",\\n      answers: {\\n        a: \\\"Node.js\\\",\\n        b: \\\"TypeScript\\\",\\n        c: \\\"npm\\\"\\n      },\\n      correctAnswer: \\\"c\\\"\\n    },\\n    {\\n      question: \\\"Which tool can you use to ensure code quality?\\\",\\n      answers: {\\n        a: \\\"Angular\\\",\\n        b: \\\"jQuery\\\",\\n        c: \\\"RequireJS\\\",\\n        d: \\\"ESLint\\\"\\n      },\\n      correctAnswer: \\\"d\\\"\\n    }\\n  ];\\n\\n  // Kick things off\\n  buildQuiz();\\n\\n  // Event listeners\\n  submitButton.addEventListener('click', showResults);\\n})();\",\"html_pre_processor\":\"none\",\"css_pre_processor\":\"none\",\"js_pre_processor\":\"none\",\"html_classes\":\"\",\"css_starter\":\"neither\",\"css_prefix_free\":null,\"css_external\":null,\"js_library\":null,\"js_modernizr\":null,\"js_external\":null,\"created_at\":\"2017-05-22T14:47:23.000Z\",\"updated_at\":\"2020-01-17T08:50:54.000Z\",\"session_hash\":\"6efcf1a2479aacc02c68f19d755cabba\",\"title\":\"Simple JavaScript Quiz  (No Pagination)\",\"description\":\"Pen to accompany a SitePoint article on creating your own JavaScript quiz.\\nArticle URL: https://www.sitepoint.com/simple-javascript-quiz/\",\"slug_hash\":\"rmoLbW\",\"head\":\"\",\"private\":false,\"has_animation\":false,\"css_pre_processor_lib\":\"\",\"checksum\":0,\"screenshot_uuid\":\"939ae283-1d28-4824-9b1e-5a42299e09ff\",\"team_id\":0,\"css_prefix\":\"neither\",\"template\":false,\"js_module\":null,\"pen_hash\":null}","__jwt":"eyJhbGciOiJIUzI1NiJ9.eyJjbGFpbXMiOnsidXNlcl9pZCI6MX0sImV4cCI6MTYzMzM1OTA1NX0.fhNHggqD_QrMZBEX6UD0Ocek9RJhTS26-0hdscbxB7c","__processorsMap":{"autoprefixer":"autoprefixer-10","babel":"babel-7","coffeescript":"coffeescript-2","format-1":"format-1","flutter":"flutter-1","haml":"haml-4","less":"less-3","lint-1":"lint-1","livescript":"livescript-1","markdown":"markdown-11","postcss":"postcss-7","pug":"pug-2","sass":"sass-1","scss":"sass-1","sass-ruby-3":"sass-ruby-3","sass-ruby-compass-3":"sass-ruby-compass-3","slim":"slim-3","stylus":"stylus-0","typescript":"typescript-4","vue":"vue-2","vue3":"vue-3"},"__favicon_mask_icon":"https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg","__favicon_shortcut_icon":"https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico","__path_to_iframe_console_runner":"https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d8236034cc3508e70b0763f2575a8bb5850f9aea541206ce56704c013047d712.js","__path_to_iframe_refresh_css":"https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js","__path_to_iframe_runtime_errors":"https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js","__path_to_processor_worker":"https://cpwebassets.codepen.io/assets/packs/router.js","__path_to_stop_execution_on_timeout":"https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js","__pen_normalize_css_url":"https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css","__pen_prefix_free_url":"https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js","__pen_reset_css_url":"https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"}</textarea>
+<script nonce="">
+    __editor_config = {"id":"classic","editors":[{"id":"html","type":"html","name":"HTML","showEditor":true,"showSettings":true,"showProcessors":true,"embeds":{"showViewCompiled":true},"settings":[{"id":"processor","name":"HTML Preprocessor","type":"select","visible":true,"values":[{"id":"none","name":"None","value":"none","default":true},{"id":"haml","name":"Haml","value":"haml"},{"id":"markdown","name":"Markdown","value":"markdown"},{"id":"slim","name":"Slim","value":"slim"},{"id":"pug","name":"Pug","value":"pug"}]},{"id":"html_classes","name":"Add Class(es) to \u003chtml\u003e","type":"input","placeholder":"e.g. single post post-1234","visible":true},{"id":"head","name":"Stuff for \u003chead\u003e","type":"textarea","placeholder":"e.g. \u003cmeta\u003e, \u003clink\u003e, \u003cscript\u003e","visible":true}],"actions":[{"id":"tidy_html","type":"tidy_code","name":"Format HTML","disabled_processors":["haml","slim"]},{"id":"view_compiled_html","type":"view_compiled","name":"View Compiled HTML","disabled_processors":["none"],"showInEmbeds":true},{"id":"analyze_html","type":"analyze","name":"Analyze HTML"},{"id":"maximize_html_editor","type":"maximize","name":"Maximize HTML Editor"},{"id":"minimize_html_editor","type":"minimize","name":"Minimize HTML Editor"},{"id":"fold_all_html","type":"fold_all","name":"Fold All"},{"id":"unfold_all_html","type":"unfold_all","name":"Unfold All"}],"processors":[{"id":"none","name":"None"},{"id":"haml","name":"Haml"},{"id":"markdown","name":"Markdown"},{"id":"slim","name":"Slim"},{"id":"pug","name":"Pug"}]},{"id":"css","type":"css","name":"CSS","showEditor":true,"showSettings":true,"showProcessors":true,"showVendorPrefixing":true,"embeds":{"showViewCompiled":true},"actions":[{"id":"tidy_css","type":"tidy_code","name":"Format CSS","disabled_processors":["sass","stylus"]},{"id":"view_compiled_css","type":"view_compiled","name":"View Compiled CSS","disabled_processors":["none"],"disabled_prefixes":["neither","prefixfree"]},{"id":"analyze_css","type":"analyze","name":"Analyze CSS"},{"id":"maximize_css_editor","type":"maximize","name":"Maximize CSS Editor"},{"id":"minimize_css_editor","type":"minimize","name":"Minimize CSS Editor"},{"id":"fold_all_css","type":"fold_all","name":"Fold All","disabled_processors":["sass"]},{"id":"unfold_all_css","type":"unfold_all","name":"Unfold All","disabled_processors":["sass"]}],"processors":[{"id":"none","name":"None"},{"id":"less","name":"Less"},{"id":"scss","name":"SCSS"},{"id":"sass","name":"Sass"},{"id":"stylus","name":"Stylus"},{"id":"postcss","name":"PostCSS"}],"parSuffixes":["less","scss","sass","styl"]},{"id":"js","type":"js","name":"JS","showEditor":true,"showSettings":true,"showProcessors":true,"detectImports":true,"externalResourcesHidden":false,"embeds":{"showViewCompiled":true},"actions":[{"id":"tidy_js","type":"tidy_code","name":"Format JavaScript","disabled_processors":["coffeescript, livescript"]},{"id":"view_compiled_js","type":"view_compiled","name":"View Compiled JavaScript","disabled_processors":["none"]},{"id":"analyze_js","type":"analyze","name":"Analyze JavaScript"},{"id":"maximize_js_editor","type":"maximize","name":"Maximize JavaScript Editor"},{"id":"minimize_js_editor","type":"minimize","name":"Minimize JavaScript Editor"},{"id":"fold_all_js","type":"fold_all","name":"Fold All"},{"id":"unfold_all_js","type":"unfold_all","name":"Unfold All"}],"processors":[{"id":"none","name":"None"},{"id":"babel","name":"Babel"},{"id":"typescript","name":"TypeScript"},{"id":"coffeescript","name":"CoffeeScript"},{"id":"livescript","name":"LiveScript"}]}],"formatters":[{"id":"classic","name":"Classic","runOn":[{"eventType":"demand"}],"url":"https://fi593g2v2a.execute-api.us-west-2.amazonaws.com/production/format"}],"layout":{"default":"top"},"linters":[{"id":"classic","name":"Classic","runOn":[{"eventType":"demand"}],"url":"https://fi593g2v2a.execute-api.us-west-2.amazonaws.com/production/lint"}],"preview":{"intervalMaxWaitMS":3500,"intervalMS":1200},"settings":[{"id":"details","name":"Pen Details","type":"setting"},{"id":"privacy","name":"Privacy","pro":true,"type":"setting"},{"id":"behavior","name":"Behavior","type":"setting"},{"id":"editor","name":"Editor","type":"setting"},{"id":"template","name":"Template","type":"setting"},{"id":"screenshot","name":"Screenshot","pro":true,"type":"setting"}]}
+    __processedPen = {"html":"&lt;div id=&quot;quiz&quot;&gt;&lt;/div&gt;\n&lt;button id=&quot;submit&quot;&gt;Submit Quiz&lt;/button&gt;\n&lt;div id=&quot;results&quot;&gt;&lt;/div&gt;","css":"body{\n\tfont-size: 20px;\n\tfont-family: sans-serif;\n\tcolor: #333;\n}\n.question{\n\tfont-weight: 600;\n}\n.answers {\n  margin-bottom: 20px;\n}\n.answers label{\n  display: block;\n}\n#submit{\n\tfont-family: sans-serif;\n\tfont-size: 20px;\n\tbackground-color: #279;\n\tcolor: #fff;\n\tborder: 0px;\n\tborder-radius: 3px;\n\tpadding: 20px;\n\tcursor: pointer;\n\tmargin-bottom: 20px;\n}\n#submit:hover{\n\tbackground-color: #38a;\n}","js":"(function () {\n  function buildQuiz() {\n    // variable to store the HTML output\n    const output = [];\n\n    // for each question...\n    myQuestions.forEach(\n    (currentQuestion, questionNumber) =&gt; {\n\n      // variable to store the list of possible answers\n      const answers = [];\n\n      // and for each available answer...\n      for (letter in currentQuestion.answers) {\n\n        // ...add an HTML radio button\n        answers.push(\n        `&lt;label&gt;\n              &lt;input type=&quot;radio&quot; name=&quot;question${questionNumber}&quot; value=&quot;${letter}&quot;&gt;\n              ${letter} :\n              ${currentQuestion.answers[letter]}\n            &lt;/label&gt;`);\n\n      }\n\n      // add this question and its answers to the output\n      output.push(\n      `&lt;div class=&quot;question&quot;&gt; ${currentQuestion.question} &lt;/div&gt;\n          &lt;div class=&quot;answers&quot;&gt; ${answers.join(&#39;&#39;)} &lt;/div&gt;`);\n\n    });\n\n\n    // finally combine our output list into one string of HTML and put it on the page\n    quizContainer.innerHTML = output.join(&#39;&#39;);\n  }\n\n  function showResults() {\n\n    // gather answer containers from our quiz\n    const answerContainers = quizContainer.querySelectorAll(&#39;.answers&#39;);\n\n    // keep track of user&#39;s answers\n    let numCorrect = 0;\n\n    // for each question...\n    myQuestions.forEach((currentQuestion, questionNumber) =&gt; {\n\n      // find selected answer\n      const answerContainer = answerContainers[questionNumber];\n      const selector = `input[name=question${questionNumber}]:checked`;\n      const userAnswer = (answerContainer.querySelector(selector) || {}).value;\n\n      // if answer is correct\n      if (userAnswer === currentQuestion.correctAnswer) {\n        // add to the number of correct answers\n        numCorrect++;\n\n        // color the answers green\n        answerContainers[questionNumber].style.color = &#39;lightgreen&#39;;\n      }\n      // if answer is wrong or blank\n      else {\n          // color the answers red\n          answerContainers[questionNumber].style.color = &#39;red&#39;;\n        }\n    });\n\n    // show number of correct answers out of total\n    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;\n  }\n\n  const quizContainer = document.getElementById(&#39;quiz&#39;);\n  const resultsContainer = document.getElementById(&#39;results&#39;);\n  const submitButton = document.getElementById(&#39;submit&#39;);\n  const myQuestions = [\n  {\n    question: &quot;Who invented JavaScript?&quot;,\n    answers: {\n      a: &quot;Douglas Crockford&quot;,\n      b: &quot;Sheryl Sandberg&quot;,\n      c: &quot;Brendan Eich&quot; },\n\n    correctAnswer: &quot;c&quot; },\n\n  {\n    question: &quot;Which one of these is a JavaScript package manager?&quot;,\n    answers: {\n      a: &quot;Node.js&quot;,\n      b: &quot;TypeScript&quot;,\n      c: &quot;npm&quot; },\n\n    correctAnswer: &quot;c&quot; },\n\n  {\n    question: &quot;Which tool can you use to ensure code quality?&quot;,\n    answers: {\n      a: &quot;Angular&quot;,\n      b: &quot;jQuery&quot;,\n      c: &quot;RequireJS&quot;,\n      d: &quot;ESLint&quot; },\n\n    correctAnswer: &quot;d&quot; }];\n\n\n\n  // Kick things off\n  buildQuiz();\n\n  // Event listeners\n  submitButton.addEventListener(&#39;click&#39;, showResults);\n})();"};
+    __preprocessors = {
+      "html": "none",
+      "css": "none",
+      "js": "none"
+    };
+    __preprocessorNames = {
+      "html": "HTML",
+      "css": "CSS",
+      "js": "JS"
+    };
+    __editable = true;
+    __embed_prefill = false;
+  </script>
+<script src="./embed-e369dee9e85a1a53638c341339102b70938d2f103a2252bc1bf4c7ec1dc26212.js"></script>
+<script src="./vendor-1db6a944d7c777e2787f.chunk.js"></script>
+<script src="./2-4e29e8258b7ddf3a4b6b.chunk.js"></script>
+<script src="./processorRouter-9bce8549ccc4b475a15b.js"></script>
+<script src="./editable_embed-777d6dbe8efe5e8915087727ed2cadb1f5c96dbd81a6ce0a2e42f70f2faa0e31.js"></script>
+
+
+</body></html>

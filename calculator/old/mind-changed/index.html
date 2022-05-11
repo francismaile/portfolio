@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Calculator</title>
+  <meta name="description" content="A Simple Calculator App">
+  <meta name="author" content="FrancisMaile">
+
+  <link rel="stylesheet" href="calc.css">
+
+</head>
+
+<body>
+
+	<div id="calculator">
+		<input id="display" type="text" placeholder="0" />
+		<button id="clear">AC</button>
+		<button id="sign"><span id="plus">+</span><span id="slash">&frasl;</span><span id="minus">&ndash;</span></button>
+		<button id="percent">&percnt;</button>
+		<button id="divide" class="op">&divide;</button>
+		<button class="digit">7</button>
+		<button class="digit">8</button>
+		<button class="digit">9</button>
+		<button id="multiply" class="op">&times;</button>
+		<button class="digit">4</button>
+		<button class="digit">5</button>
+		<button class="digit">6</button>
+		<button id="subtract" class="op">&minus;</button>
+		<button class="digit">1</button>
+		<button class="digit">2</button>
+		<button class="digit">3</button>
+		<button id="add" class="op">&plus;</button>
+		<button class="digit">0</button>
+		<button id="decimal">.</button>
+		<button id="equals">&equals;</button>
+	</div>
+
+	<script src="index.js"></script>
+	<script src="calc.js"></script>
+
+	<script src="">
+	/* the code below is for fixing the delay when clicking the number
+		buttons on ios devices
+	*/
+/* https://stackoverflow.com/questions/12238587/eliminate-300ms-delay-on-click-events-in-mobile-safari#answer-32028915
+var keyboard = document.getElementById("keyboard");
+var buttons = keyboard.children;
+var isTouch = ("ontouchstart" in window);
+for (var i=0;i<buttons.length;i++) {
+    if ( isTouch ) {
+        buttons[i].addEventListener('touchstart', clickHandler, false);
+    } else {
+        buttons[i].addEventListener('click', clickHandler, false);
+    }
+}
+ */
+/* https://stackoverflow.com/questions/12238587/eliminate-300ms-delay-on-click-events-in-mobile-safari#answer-45701768 */
+window.addEventListener('touchstart', (e) => {
+    // alert('fast touch');
+		}, { passive : true});
+/*
+	More help
+	https://developer.mozilla.org/en-US/docs/Web/API/Touch_events
+ https://labs.ft.com/articles/ft-fastclick/
+ https://webkit.org/blog/5610/more-responsive-tapping-on-ios/
+ https://www.w3.org/TR/pointerevents/#the-touch-action-css-property
+ https://codepen.io/vatsa287/pen/eYJVZOp
+*/
+
+	/* this is just for dbugging */
+document.querySelectorAll('button').forEach(
+	element => {
+		element.addEventListener( 'click', function (element) {
+				console.log('Buffer:', calculator.getBuffer());
+		});
+	}
+);
+
+
+</script>
+</body>
+</html>
+
+

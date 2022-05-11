@@ -1,0 +1,3 @@
+
+	// https://alvarotrigo.com/blog/javascript-slider-how-to-make-one/
+

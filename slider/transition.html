@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>TheHTMLTemplate</title>
+  <meta name="description" content="TheHTMLTemplate">
+  <meta name="author" content="FrancisMaile">
+
+  <link rel="stylesheet" href="">
+
+	<style>
+
+#slider {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="slider" class="slide-in">
+		<ul>
+			<li>Lorem</li>
+			<li>Ipsum</li>
+			<li>Dolor</li>
+		</ul>
+	</div>
+
+<button id="toggle" style="position:absolute; top: 120px;">Toggle</button>
+<script src=""></script>
+<script>
+
+	var $slider = document.getElementById('slider');
+	var $toggle = document.getElementById('toggle');
+
+	$toggle.addEventListener('click', function() {
+			var isOpen = $slider.classList.contains('slide-in');
+
+			$slider.setAttribute('class', isOpen ? 'slide-out' : 'slide-in');
+		});
+</script>
+</body>
+</html>
+
+

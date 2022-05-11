@@ -55,9 +55,8 @@ header li a {
 	font-size: 1.75em;
 }
 
-header li a:hover,
 header .menu-icon:hover {
-  background-color: #f4f4f4;
+	background-color: #f4f4f4;
 }
 
 header .logo {
@@ -75,6 +74,8 @@ header #nav-bar > ul {
   max-height: 0;
   transition: max-height .2s ease-out;
 }
+
+/*header li a:hover,*/
 
 /* menu icon */
 
@@ -113,6 +114,12 @@ header .menu-icon .navicon:before {
 
 header .menu-icon .navicon:after {
   top: -5px;
+}
+
+/* TODO some refactoring is needed
+
+#nav-bar ul {
+	cursor: pointer;
 }
 
 /* menu btn */

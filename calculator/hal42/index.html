@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://drecourt.com/wp-content/uploads/2016/06/font.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- THis is HTML for the FCC calculator-->
+  <div class="document">
+    <div class="calculator-wrapper">
+      <div class="calculator">
+        <div class="branding">
+          <div class="brand">FCC</div>
+          <div class="description">Electronic calculator</div>
+          <div class="model">HAL-42</div>
+        </div>
+        <div class="screen-frame">
+          <div class="screen">
+            <div class="screen-background">-8.8.8.8.8.8.8.8.</div>
+            <div class="screen-text">0</div>
+            <div class="memory-sign-background">M</div>
+            <div class="memory-sign">M</div>
+          </div>
+        </div>
+        <div class="buttons">
+          <table class="top-row">
+            <tr>
+              <td>
+                <div class="button small memory" id="MRC">MRC</div>
+              </td>
+              <td>
+                <div class="button small memory" id="Mplu">M+</div>
+              </td>
+              <td>
+                <div class="button small memory" id="Mmin">M-</div>
+              </td>
+              <td>
+                <div class="button small sqrt" id="sqrt">&radic;</div>
+              </td>
+              <td>
+                <div class="button small off" id="OFF">OFF</div>
+              </td>
+            </tr>
+          </table>
+          <table class="other-rows">
+            <tr>
+              <td>
+                <div class="button red clear on" id="AC">AC</div>
+              </td>
+              <td>
+                <div class="button red clear" id="CE">C</div>
+              </td>
+              <td>
+                <div class="button percent" id="percent">%</div>
+              </td>
+              <td>
+                <div class="button plusmn" id="plusmn">&plusmn;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button digit" id="d7">7</div>
+              </td>
+              <td>
+                <div class="button digit" id="d8">8</div>
+              </td>
+              <td>
+                <div class="button digit" id="d9">9</div>
+              </td>
+              <td>
+                <div class="button operator" id="div">/</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button digit" id="d4">4</div>
+              </td>
+              <td>
+                <div class="button digit" id="d5">5</div>
+              </td>
+              <td>
+                <div class="button digit" id="d6">6</div>
+              </td>
+              <td>
+                <div class="button operator" id="mul">&times;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button digit" id="d1">1</div>
+              </td>
+              <td>
+                <div class="button digit" id="d2">2</div>
+              </td>
+              <td>
+                <div class="button digit" id="d3">3</div>
+              </td>
+              <td>
+                <div class="button operator" id="min">&ndash;</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="button digit" id="d0">0</div>
+              </td>
+              <td>
+                <div class="button dot" id="dot">.</div>
+              </td>
+              <td>
+                <div class="button equal" id="equal">=</div>
+              </td>
+              <td>
+                <div class="button operator" id="plu">+</div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div><div class="text-wrapper">
+      <div class="text">
+        <h1>Congratulations on choosing the HAL-42.</h1>
+        <h2>The latest calculator by <em>FCC</em></h2>
+        <p>Equiped with the most advanced functionalities:</p>
+        <lu>
+          <li><strong>Percent calculation:</strong> For example, to calculate 10% off £120, simply type <code>1 2 0 - 1 0 % =</code></li>
+          <li><strong>Easy squaring:</strong> For example, to calculate the square of 234, simply type <code> 2 3 4 &times; &times;</code></li>
+          <li><strong>Compound interests:</strong> For example, to see how much you'll have in an account with a 5% interest when you deposit £2100, simply type <code> 1 . 0 5 &times; &times; =</code>. Ignore the result and type <code>2 1 0 0 =</code>. Pressing <code>=</code> again gives you the interest for each subsequent year.</li>
+          <li><strong>And many more!</strong></li>
+        </lu>
+        <p><strong>To turn it on</strong>, press the <code>AC</code> button.</p>
+        <p>You can interact with the calculator using the mouse or the keyboard. Hover on each key to discover its keyboard shortcut.</p>
+
+        <p>Design inspired by the <a href="http://www.casio-intl.com/asia-mea/en/calc/practical/portable/product_list/?m_no=120" target="_blank">Casio HL-4</a>.</p>
+
+        <p>7-segment font by <a href="http://www.keshikan.net/fonts-e.html" target="_blank">keshikan-zume</a>.</p>
+      </div>
+    </div>
+  </div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

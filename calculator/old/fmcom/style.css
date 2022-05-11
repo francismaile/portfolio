@@ -1,0 +1,73 @@
+
+@font-face {
+    font-family: "DSEG Classic Mini Bold";
+    src: url(https://dl.dropboxusercontent.com/s/ycz95txfg2gzu9j/DSEG7ClassicMini-Bold.ttf) format("truetype");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  display: flex;
+}
+
+#calculator {
+  border: 1px solid #F3F3F3;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #D3D3D3;
+  background: linear-gradient(120deg, #E3E3E3	, #FFFFFF);
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+  cursor: default;
+}
+
+#retro {
+  margin-bottom: 6px;
+  text-align: center;
+  font: small-caps 13px sans-serif;
+}
+
+#display {
+  border: 3px ridge silver;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 6px 4px 0px 2px;
+  background: #93ad5d;
+  background-image: url(https://dl.dropboxusercontent.com/s/nhq4b92sc3f24tf/lcd-bkgnd.png);
+  width: 128px;
+  height: 26px;
+  overflow: hidden;
+  text-align: right;
+  font-size: 16px;
+  font-family: DSEG Classic Mini Bold, sans-serif;
+}
+
+#branding {
+  width: 100px;
+  border: 1px solid #FFF;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  background: #dee1e8;
+  text-align: center;
+  font: small-caps 8px Verdana;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  margin: 2px 1px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button#clear {
+  padding-left: 3px;
+}
+
+button#equals {
+  width: 65px;
+}

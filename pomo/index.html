@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pomato Timer</title>
+  <meta name="description" content="Pomodoro Timer">
+  <meta name="author" content="FrancisMaile">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<script src="https://use.fontawesome.com/37d1ca2b99.js"></script>
+  <link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+<div id="wrapper">
+
+    <div class="off" id="settingsBtn"><i class="fa fa-gear"></i></div>
+    <div id="timerDisplay" title="Click to start or stop the timer">25</div>
+    <div id="timerLabel"></div>
+    <div id="checkMarks"></div>
+  
+		<div id="timeSetWrapper">
+			<div class="timerSet" id="taskSession"><span>25</span><div class="timeSetLabel">Pomodoro</div></div>
+			<div class="timerSet" id="shortBreak"><span>5</span><div class="timeSetLabel">Short Break</div></div>
+			<div class="timerSet" id="longBreak"><span>15</span><div class="timeSetLabel">Long Break</div></div>
+		</div>
+
+  <div id="help">
+    <div id="help-settings" class="help-text left-arrow">Change timer settings</div>
+    <div id="help-start-timer" class="help-text right-arrow">Start timer</div>
+    <div id="help-stop-timer" class="help-text right-arrow">Stop (pause) timer</div>
+    <div id="help-reset-timer" class="help-text left-arrow">Hold to reset timer</div>
+  </div><!--  end help -->
+
+</div><!--  end wrapper -->
+
+<div id="help-button"></div>
+<div id="help-help-button" class="animated fadeOut help-text left-arrow">Get help</div>
+
+<div id="get-info-button"></div>
+<div id="info">
+    <div id="aboutPT">
+      <h2>The Pomodoro Technique</h2>
+      <div id="content">
+        <p>There are six steps in the Pomodoro technique:<br>
+          <ol>
+          <li>Decide on the task to be done.</li>
+          <li>Set the pomodoro timer (traditionally to 25 minutes).</li>
+          <li>Work on the task.</li>
+          <li>End work when the timer rings and put a checkmark on a piece of paper.</li>
+          <li>If you have fewer than four checkmarks, take a short break (3–5 minutes), then go to step 2.</li>
+          <li>After four pomodoros, take a longer break (15–30 minutes), reset your checkmark count to zero, then go to step 1.</li>
+          </ol>
+        </p>
+        <p>The stages of planning, tracking, recording, processing and visualizing are fundamental to the technique.
+          In the planning phase tasks are prioritized by recording them in a "To Do Today" list. This enables users
+          to estimate the effort tasks require. As pomodoros are completed, they are recorded, adding to a sense of
+          accomplishment and providing raw data for subsequent self-observation and improvement.</p>
+
+        <p>For the purposes of the technique, a pomodoro is the interval of time spent working. After task
+          completion, any time remaining in the Pomodoro is devoted to overlearning. Regular breaks are taken,
+          aiding assimilation. A short (3–5 minutes) rest separates consecutive pomodoros. Four pomodoros form
+          a set. A longer (15–30 minute) rest is taken between sets.</p>
+
+        <p>A goal of the technique is to reduce the impact of internal and external interruptions on focus and flow.
+          A pomodoro is indivisible. When interrupted during a pomodoro, either the other activity must be recorded
+          and postponed (inform – negotiate – schedule – call back) or the pomodoro must be abandoned.</p>
+
+        <p><a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank" title="Wikipedia">- Wikipedia - </a>
+      </div>
+    </div>
+
+	<div id=credits>
+		<h2>Credits</h2>
+		Tomato image: <a href="https://openclipart.org/detail/2543/tomato2" title="Image credit" target="_blank" rel="noopener noreferrer">OpenClipArt</a><br>
+		Chime sound: <a href="http://soundbible.com/1598-Electronic-Chime.html" title="Sound credit" target="_blank" rel="noopener noreferrer">SoundBible</a><br>
+		Cool Icons: <a href="https://icons8.com">Icon pack by Icons8</a><br>
+		Pomodoro Technique Description: <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Wikipedia</a><br>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

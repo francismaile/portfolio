@@ -14,9 +14,12 @@
 #winSize {
 	position: fixed;
 	top: 0px;
+  left: 0px;
 	padding: 2px;
 	/* width: 100px; */
 	z-index: 100;
+  background: green;
+  color: white;
 }
 
 </style>
@@ -41,19 +44,22 @@
 	<div id="wrapper">
 				<section id="intro">
 					<h2>Introducing: Bio-Optic Organized Knowledge (B.O.O.K.<span class="reg">®</span>)</h2>
-					<iframe
-						id="video"
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/4Ygs3IHJ2bM?controls=0"
-						title="Reading a B.O.O.K. is Magical - Reading Rainbow Theme"
-						frameborder="0"
-						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen>
-					</iframe>
+					<div id="vid-holder">
+						<iframe
+							id="video"
+							width="560"
+							height="315"
+							src="https://www.youtube.com/embed/4Ygs3IHJ2bM?controls=0"
+							title="Reading a B.O.O.K. is Magical - Reading Rainbow Theme"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
+					</div>
 				</section>
 				<a class="jump-point" id="features"></a>
 				<h2>B.O.O.K. features:</h2>
+				<p>TODO We need a link/credit to the original of this</p>
 				<section id="feature-list" class="info">
 					<ul>
 						<li class="feature"><h3 class="feature-title"><i class="fas fa-recycle"></i>Recyclable</h3>
@@ -170,31 +176,15 @@
 				<h2> We are launching soon!  </h2>
 				
 			<h3>Enter your email below to be the first to know when we launch!</h3>
-			<form id="form" action="https://www.freecodecamp.com/email-submit">
-				<input id="email" type="email" placeholder="Enter your email here (name@domain.tld)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+      <!-- <form id="form" action="https://www.freecodecamp.com/email-submit"> -->
+			<form id="form" action="" method="GET">
+				<input id="email" name="email" type="email" placeholder="Enter your email here (name@domain.tld)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
 				<input id="submit" type="submit" value="Go for it!" />
 			</form>
 			</section>
 	</div><!-- <wrapper> -->
+	<script src="scripts.js"></script>
 </body>
-<script>
-// data-href
- document.querySelectorAll('.nav-link').forEach( menuItem => {
-			menuItem.addEventListener( 'click', e => {
-			document.getElementById(e.target.dataset.href).scrollIntoView(true);
-		});
-
-	});
-	// const scrollTo = function(toElem) { return false; };
-
-const windowSizeOutput = document.querySelector('#winSize');
-
-function reportWindowSize() {
-  winSize.textContent = window.innerWidth + ', ' + window.innerHeight;
-}
-
-window.onresize = reportWindowSize;
-</script>
 </html>
 
 

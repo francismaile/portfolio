@@ -1,0 +1,162 @@
+
+#slider-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#slider {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 900px;
+	margin: 10px;
+	background-color: white;
+	overflow: hidden;
+}
+
+#slides {
+	width: 100%;
+	padding-top: 66%;
+}
+
+.slider_slide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	font-weight: bold;   
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: lemonchiffon;
+	transition: 1s;
+	opacity: 0;
+}
+
+img.slider_slide  {
+	width: 100%;
+	max-width: 900px;
+}
+
+
+.slider_slide.active {
+	opacity: 1;
+	z-index: 100;
+}
+
+.slider-nav {
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	background-color: #333;
+	opacity: .8;
+	cursor: pointer;
+	z-index: 200;
+}
+
+#slider-prev {
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+#slider-next {
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+#slider-prev::after,
+#slider-next::after {
+	content: "";
+	position: absolute;
+	border: solid white;
+	border-width: 0 4px 4px 0;
+	display: inline-block;
+	padding: 3px;
+	width: 40%;
+	height: 40%;
+}
+
+
+#slider-next::after{
+	top: 50%;
+	right: 50%;
+	transform: translate(25%, -50%) rotate(-45deg);
+}
+#slider-prev::after {
+	top: 50%;
+	right: 50%;
+	transform: translate(75%, -50%) rotate(135deg);
+}
+
+#breadcrumbs {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 200;
+}
+
+.slider_navlink {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 1px #fff solid;
+	background-color: #333;
+	opacity: .8;
+	margin: 0 10px 0 10px;
+	cursor: pointer;
+}
+.slider_navlink.active {
+	background-color: #fff;
+	border: 1px #333 solid;
+}
+
+/****************************************************************************************************/
+/* Use CSS3 2D transform to avoid performance issues (mobile)                                       */
+/* https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition#answer-31819499 */
+/****************************************************************************************************/
+
+#other-slider {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+    
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+    
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+
+	

@@ -1,37 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en" >
 
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-
+  <meta charset="UTF-8">
   <title>Portfolio</title>
-  <meta name="description" content="Portfolio">
-  <meta name="author" content="FrancisMaile">
 
-  <link rel="stylesheet" href="">
+  <!-- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+<!-- <script src="javascript/bundle.js"></script> -->
+      <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+  <!-- TODO improve section colors -->
+  <!-- TODO change nav: active link larger, inactive smaller, plus hilited -->
+  <!-- TODO each section fills screen -->
+  <!-- TODO improve project images -->
+	<!-- TODO project tiles flip on hover after delay to reveal description and info about project -->
 
-	<ol>
-		<li><a href="tribute/">✓Tribute Page</a>
-		<li><a href="formpage/">✓Form</a>
-		<li><a href="parallax/">Parallax Webpage</a>
-		<li><a href="landing/">Landing Page</a>
-		<li><a href="restaurant/">Restaurant Website</a>
-		<li><a href="event/">Event or Conference Webpage</a>
-		<li><a href="music/">Music Store</a>
-		<li><a href="photo/">Photography Site</a>
-		<li><a href="portfolio/">Personal Portfolio</a>
-		<li><a href="docs/">Technical Documentation</a>
-	</ol>
-	<blockquote class="quote">
-	<p>Based on this page:
-	<a href="https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/">Top 10 Projects For Beginners To Practice HTML and CSS Skills - GeeksforGeeks</a>
-	<br>
-	<cite>https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/</cite>
-	</p></blockquote>
-	
-</body>
-</html>
+  <header>
+    <h1>Francis Maile Web Dev</h1>
+		<p> - code typing animation inserted here - </p>
+		<p>Side by side editing code/live updating as I type the name of the site</p>
+  </header>
+  <nav class=" " id="main">
+      <ul id="navbar">
+        <li class="logo"><a href="./">&lt;&nbsp;Hello&nbsp;World&nbsp;/&gt;</a></li>
+        <li><a href='#welcome-section'>About</a></li>
+        <li><a href='#projects'>Portfolio</a></li>
+        <li><a href='#contact'>Contact</a></li>
+      </ul>
+  </nav>
+
+  <div id="wrapper">
+    <section id="welcome-section">
+			<div id="about" class="container">
+				I am a remote web developer currently based in
+				the Pacific North West of USA. A creative professional driven to use
+				the best tools and technologies to produce the best possible result for
+				your project. My focus is on building a website that helps you reach
+				your <strong>business</strong> goals.
+			</div>
+			
+			<div>
+
+			<a href="http://vanilla-js.com/"><img src="http://localhost/images/tech/vjs-button.png" alt=""></a>
+			</div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+			<!-- Project Tile Template
+				<a href="projectdirectory/index.html" class="project project-tile">
+					<img class="project-img" src="images/screenshot.png" alt="project name">
+					<p class="project-title">Project Name</p>
+				</a>
+			-->
+			<div id="project-grid">
+				<a href="landing/index.html" class="project project-tile">
+					<img class="project-img" src="images/landing.png" alt="project name">
+					<p class="project-title">Landing Page</p>
+				</a>
+				<a href="tribute/index.html" class="project project-tile">
+					<img class="project-img" src="images/tribute.png" alt="Tribute Page">
+					<p class="project-title">Tribute Page</p>
+				</a>
+				<a href="wikiapi/index.html" class="project project-tile">
+					<img class="project-img" src="images/wikisearch.png" alt="WikiApi Search">
+					<p class="project-title">WikiSearch API</p>
+				</a>
+				<a href="calculator/index.html" class="project project-tile">
+					<img class="project-img" src="images/calculator.png" alt="Calculator">
+					<p class="project-title">Calculator</p>
+				</a>
+				<a href="simon-game/index.html" class="project project-tile">
+					<img class="project-img" src="images/simon.png" alt="Simon Game">
+					<p class="project-title">Simple Simon</p>
+				</a>
+				<a href="formpage/index.html" class="project project-tile">
+					<img class="project-img" src="images/survey.png" alt="Survey Form">
+					<p class="project-title">Survey Form</p>
+				</a>
+				<a href="pomo/index.html" class="project project-tile">
+					<img class="project-img" src="images/pomodoro.png" alt="Pomodoro Timer">
+					<p class="project-title">Pomodoro Timer</p>
+				</a>
+			</div>
+
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<div class="container" id="contact-form">
+				<form>
+					<fieldset disabled>
+						<div class="form-group row" id="user-name">
+							<label for="user-name-input" class="col-xs-2 col-form-label">Name</label>
+							<div class="col-xs-10">
+								<input class="form-control" type="text" value="Please introduce yourself" id="user-name-input">
+							</div>
+						</div><!-- user-name -->
+						<div class="form-group row" id="user-email">
+							<label for="user-email-input" class="col-xs-2 col-form-label">Email</label>
+							<div class="col-xs-10">
+								<input class="form-control" type="email" value="nicetoknowya@example.com" id="user-email-input">
+								<small id="emailHelp" class="form-text text-muted">Just between you and me. Promise!.</small>
+							</div><!-- user-email -->
+							<div class="form-group" id="user-message">
+								<label for="user-message-input">Tell me all about it</label>
+								<textarea class="form-control" id="user-message-input" rows="3">This is just an exercise for FreeCodeCamp.com. The form is not currently active.
+								</textarea>
+							</div><!-- user-message -->
+						</div>
+						<button type="submit" class="btn btn-primary" style="float: right;">Send</button>
+					</fieldset>
+				</form>
+				<div style="text-align: center;">
+					<ul class="social-network social-circle">
+						<li><a href="https://github.com/francismaile" target="_blank" class="icoGit" title="GitHub"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://www.facebook.com/francismaile" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/FrancisMaile" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/francis-maile" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+  </div> <!-- wrapper -->
+
+<script>
+  const nav = document.querySelector('#main');
+  const topOfNav = nav.offsetTop;
+  //const defaultPadding = parseInt(window.getComputedStyle(document.body).paddingTop.replace('px',''));
+
+  function fixNav() {
+    // console.log(topOfNav, window.scrollY);
+    // console.log("padding: ", document.body.style.paddingTop);
+    if (window.scrollY >= topOfNav) {
+      document.body.style.paddingTop = nav.offsetHeight + 'px';
+      document.body.classList.add('fixed-nav');
+    } else {
+      document.body.style.paddingTop = 0;
+      document.body.classList.remove('fixed-nav');
+    }
+  }
+
+  window.addEventListener('scroll', fixNav);
+
+</script>
+
+  </body>
+
+  </html>

@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>TheHTMLTemplate</title>
+  <meta name="description" content="TheHTMLTemplate">
+  <meta name="author" content="FrancisMaile">
+
+  <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+
+	<textarea id="printer" cols="20" rows="20">
+inital value
+more stuff
+</textarea>
+
+	<script>
+
+	const printer = document.getElementById('printer');
+
+	printer.addContent = function( content ) {
+		content = '\n' + content;
+		this.value += content;
+	}
+
+
+	</script>
+</body>
+</html>
+
+
