@@ -1,3 +1,4 @@
+
 html {
   height: 100%;
 }
@@ -13,12 +14,10 @@ header {
   background-size:cover;
 }
 
-/*
- * Navigation
- * I want the menu to slide full right when user scrolls down
- * should have id=navbar
-*/
 
+ /* Navigation                                                 */
+ /* I want the menu to slide full right when user scrolls down */
+ /* should have id=navbar                                      */
 
 nav#main {
   background: #00BFFF;
@@ -168,34 +167,86 @@ h2 {
   margin: 20px auto;
 }
 
+/****************/
+/*              */
+/* Contact form */
+/*              */
+/****************/
+
 #contact {
-
+	border: thin gray solid;
 }
 
-#contact-form {
-  width: 800px;
+#contact div.form-element {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-size: 2em;
 }
 
-#contact div.form-group {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+form#contact-form {
+	position: relative;
+	width: 80%;
+	border: 3px ridge gray;
+	margin: 20px auto;
+	padding: 30px 50px;
+	background: #f0f0f0;
+	text-align: left;
+	border: 3px gray double;
 }
 
-#contact label.col-xs-2 {
-  padding-top: 4px;
+label {
+	font: .95em sans-serif;
+	user-select: none;
+	white-space: nowrap;
+	overflow: visible;
 }
 
-#contact div.col-xs-10 {
-  padding-left: 6px;
+label.text-label {
+	width: 3em;
+	display: block;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	padding-left: 12px;
 }
 
-/*=========================
-  Icons
-  https://bootsnipp.com/snippets/featured/spinning-social-icons ================= */
+input[type="text"], input[type="email"] {
+	width: 480px;
+	border: none;
+	border-radius: 8px;
+	padding: 8px;
+}
 
-/* footer social icons */
+label.text-label {
+}
+
+label.message-label {
+	display: flex;
+}
+
+input[required] + label:after {
+  content: ' (Required)';
+	font-size: 0.75em;
+  color: red;
+}
+
+label div.required {
+	flex-grow: 100;
+	text-align: right;
+	color: red;
+	font-size: smaller;
+}
+
+
+/*****************************************************************/
+/*                                                               */
+/* Icons                                                         */
+/* https://bootsnipp.com/snippets/featured/spinning-social-icons */
+/* footer social icons                                                             */
+/*                                                               */
+/*****************************************************************/
+
 ul.social-network {
 	list-style: none;
 	display: inline;

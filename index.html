@@ -89,31 +89,27 @@
 
 		</section>
 		<section id="contact">
-			<h2>Contact</h2>
+			<h2>Let's Talk</h2>
 			<div class="container" id="contact-form">
-				<form>
-					<fieldset disabled>
-						<div class="form-group row" id="user-name">
-							<label for="user-name-input" class="col-xs-2 col-form-label">Name</label>
-							<div class="col-xs-10">
-								<input class="form-control" type="text" value="Please introduce yourself" id="user-name-input">
-							</div>
-						</div><!-- user-name -->
-						<div class="form-group row" id="user-email">
-							<label for="user-email-input" class="col-xs-2 col-form-label">Email</label>
-							<div class="col-xs-10">
-								<input class="form-control" type="email" value="nicetoknowya@example.com" id="user-email-input">
-								<small id="emailHelp" class="form-text text-muted">Just between you and me. Promise!.</small>
-							</div><!-- user-email -->
-							<div class="form-group" id="user-message">
-								<label for="user-message-input">Tell me all about it</label>
-								<textarea class="form-control" id="user-message-input" rows="3">This is just an exercise for FreeCodeCamp.com. The form is not currently active.
-								</textarea>
-							</div><!-- user-message -->
+				<form id="contact-form" >
+						<div class="form-element">
+							<input id="name" type="text" name="name" placeholder="Please enter your name " required>
+							<label class="text-label" id="name-label" for="name">Your Name</label>
 						</div>
-						<button type="submit" class="btn btn-primary" style="float: right;">Send</button>
-					</fieldset>
+
+						<div class="form-element">
+							<input id="email" type="email" name="email" placeholder="Enter your email here (name@domain.tld)" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+							<label class="text-label" id="email-label" for="email">Your Email</label>
+						</div>
+
+						<div class="form-element">
+							<label for="user-message-input" class="message-label">Tell me all about it</label>
+							<textarea class="form-control" id="user-message-input" rows="10" cols="60">This is just an exercise for FreeCodeCamp.com. The form is not currently active.
+							</textarea>
+						</div>
+							<button type="submit" class="btn btn-primary" style="float: right;">Send</button>
 				</form>
+			</div>
 				<div style="text-align: center;">
 					<ul class="social-network social-circle">
 						<li><a href="https://github.com/francismaile" target="_blank" class="icoGit" title="GitHub"><i class="fa fa-github"></i></a></li>
