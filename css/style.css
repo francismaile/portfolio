@@ -93,13 +93,13 @@ h2 {
 
 /*
  * Sections
- section {
- border-bottom: 1px solid #fafafa;
- border: 1px solid;
- padding-top: 60px;
- }
-
  */
+
+section {
+	border: thin solid gray;
+	padding-top: 60px;
+}
+
 
 #welcome-section {
   background: #efefef;
@@ -177,7 +177,18 @@ h2 {
 	border: thin gray solid;
 }
 
+#form-wrapper {
+	margin: 20px auto;
+	display: flex;
+}
+
+#pitch {
+	flex: 1;
+}
+
 #contact div.form-element {
+	display: flex;
+	flex-direction: column;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 6px;
@@ -186,6 +197,7 @@ h2 {
 }
 
 form#contact-form {
+	flex: 1;
 	position: relative;
 	width: 80%;
 	border: 3px ridge gray;
@@ -197,6 +209,7 @@ form#contact-form {
 }
 
 label {
+	order: -1;
 	font: .95em sans-serif;
 	user-select: none;
 	white-space: nowrap;
@@ -227,6 +240,7 @@ label.message-label {
 
 input[required] + label:after {
   content: ' (Required)';
+	vertical-align: super;
 	font-size: 0.75em;
   color: red;
 }
@@ -238,15 +252,18 @@ label div.required {
 	font-size: smaller;
 }
 
+#pitch {
+	margin: 20px auto;
+	font-size: 2em;
+}
 
-/*****************************************************************/
-/*                                                               */
-/* Icons                                                         */
-/* https://bootsnipp.com/snippets/featured/spinning-social-icons */
-/* footer social icons                                                             */
-/*                                                               */
-/*****************************************************************/
 
+  /*****************************************************************/
+  /* Social Icons                                                  */
+  /* https://bootsnipp.com/snippets/featured/spinning-social-icons */
+  /*****************************************************************/
+
+/* footer social icons */
 ul.social-network {
 	list-style: none;
 	display: inline;
@@ -352,10 +369,13 @@ footer .container {
  */
 
 .border {
-	border: thin solid;
+	border: thin solid red;
 }
 
-/*
-A modern workaround is to use the CSS scroll-margin-top property in combination with the :target selector. Described in detail: https://www.bram.us/2020/03/01/prevent-content-from-being-hidden-underneath-a-fixed-header-by-using-scroll-margin-top/
-*/
+/**************************************************************************************************************************/
+/* Prevent content from being hidden underneath a fixed header by using                                                   */
+/* scroll-margin-top A modern workaround is to use the CSS scroll-margin-top                                              */
+/* property in combination with the :target selector. Described in detail:                                                */
+/* https://www.bram.us/2020/03/01/prevent-content-from-being-hidden-underneath-a-fixed-header-by-using-scroll-margin-top/ */
+/**************************************************************************************************************************/
 
